@@ -1,0 +1,233 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #ffffff;
+  --bg-deep: #f1f7fd;
+  --ink: #1a1a1a;
+  --ink-soft: #2c2c2c;
+  --ink-muted: #5a5a5a;
+  --forest: #1e3a8a;
+  --forest-deep: #172554;
+  --copper: #60a5fa;
+  --copper-deep: #2563eb;
+  --rule: rgba(26, 26, 26, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--bg);
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-feature-settings: "cv11", "ss01", "ss03";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Paper-grain overlay disabled for the cleaner modern tech look. */
+
+/* Display headings — clean modern sans, tight tracking. */
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-feature-settings: "cv11", "ss01";
+  letter-spacing: -0.022em;
+  font-weight: 700;
+}
+
+/* Editorial small-caps eyebrow style */
+.eyebrow {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--copper-deep);
+}
+
+/* Hand-drawn underline accent under hero headline emphasis */
+.brush-underline {
+  position: relative;
+  display: inline-block;
+}
+.brush-underline::after {
+  content: "";
+  position: absolute;
+  left: -2%;
+  right: -2%;
+  bottom: -0.05em;
+  height: 0.32em;
+  background: var(--copper);
+  opacity: 0.35;
+  transform: skew(-2deg);
+  z-index: -1;
+  border-radius: 2px;
+}
+
+/* Vertical wood-grain divider used between sections */
+.rule-deco {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--rule) 15%,
+    var(--rule) 85%,
+    transparent 100%
+  );
+}
+
+/* Card with letterpress-style raised border */
+.card-press {
+  background: #fff;
+  border: 1px solid var(--rule);
+  box-shadow:
+    0 1px 0 0 rgba(26, 26, 26, 0.04),
+    0 4px 14px -8px rgba(30, 58, 138, 0.08);
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--forest);
+  color: var(--bg);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  padding: 0.95rem 1.5rem;
+  border-radius: 4px;
+  transition: all 200ms cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 0 0 var(--forest-deep);
+}
+.btn-primary:hover {
+  background: var(--forest-deep);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px -4px rgba(30, 58, 138, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--ink);
+  font-weight: 600;
+  padding: 0.95rem 1.5rem;
+  border: 1px solid var(--ink);
+  border-radius: 4px;
+  transition: all 200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-secondary:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.btn-copper {
+  background: var(--copper);
+  color: var(--ink);
+  font-weight: 700;
+  letter-spacing: 0.005em;
+  padding: 1.05rem 1.75rem;
+  border-radius: 4px;
+  transition: all 200ms cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 0 0 var(--copper-deep);
+}
+.btn-copper:hover {
+  background: var(--copper-deep);
+  color: var(--bg);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px -4px rgba(37, 99, 235, 0.4);
+}
+
+/* Vivid orange CTA used on the quote form */
+.btn-quote {
+  display: flex;
+  align-items: center;
+  background: #3b82f6;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+  padding: 1.05rem 1.75rem;
+  border-radius: 6px;
+  transition: all 200ms cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 0 0 #1d4ed8;
+}
+.btn-quote:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px -4px rgba(37, 99, 235, 0.45);
+}
+
+/* Form inputs */
+.input-field {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--ink);
+  transition: all 200ms ease;
+}
+.input-field:focus {
+  outline: none;
+  border-color: var(--forest);
+  box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.12);
+  background: #fff;
+}
+.input-field::placeholder {
+  color: var(--ink-muted);
+}
+
+/* Prose for blog post body */
+.prose-editorial {
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+.prose-editorial h2 {
+  font-size: 1.85rem;
+  margin-top: 2.5em;
+  margin-bottom: 0.6em;
+  color: var(--ink);
+}
+.prose-editorial h3 {
+  font-size: 1.35rem;
+  margin-top: 1.8em;
+  margin-bottom: 0.5em;
+  color: var(--ink);
+  font-style: italic;
+}
+.prose-editorial p {
+  margin-bottom: 1.2em;
+}
+
+/* Selection highlight */
+::selection {
+  background: var(--copper);
+  color: var(--ink);
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+.skip-link:focus {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--ink);
+  color: var(--bg);
+  z-index: 100;
+  border-radius: 4px;
+}
+
+/* Make sure text content sits above the noise */
+main, header, footer, section {
+  position: relative;
+  z-index: 2;
+}
