@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
@@ -85,6 +86,71 @@ export default function HomePage() {
           {/* Hero form */}
           <div className="lg:col-span-5 lg:sticky lg:top-24 animate-fade-up [animation-delay:200ms]">
             <LeadForm />
+          </div>
+        </div>
+      </section>
+
+      {/* ─────────── HISTORY ─────────── */}
+      <section
+        id="history"
+        className="scroll-mt-20 py-24 border-y border-ink/10"
+      >
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="lg:col-span-5 order-2 lg:order-1">
+            <div className="relative aspect-[5/6] max-w-sm mx-auto lg:mx-0 overflow-hidden rounded-sm shadow-[0_8px_30px_-12px_rgba(30,58,138,0.35)]">
+              <Image
+                src="https://static.wixstatic.com/media/dfd6ea_bad44d2ba479b1cfe00b492ee345a6d0.jpg"
+                alt="Paul and Joe Sullivan — Joe B. Sullivan & Sons Plumbing, Nashville"
+                fill
+                sizes="(min-width: 1024px) 380px, (min-width: 640px) 360px, 90vw"
+                className="object-cover"
+              />
+            </div>
+            <p className="mt-4 text-center lg:text-left text-xs uppercase tracking-[0.2em] text-ink-muted">
+              Pictured: Paul and Joe Sullivan
+            </p>
+          </div>
+
+          <div className="lg:col-span-7 order-1 lg:order-2">
+            <p className="eyebrow mb-3">Our history</p>
+            <h2 className="font-display text-4xl lg:text-5xl text-ink leading-tight mb-6">
+              Honest and reliable plumbing —{" "}
+              <span className="italic text-forest">your family&apos;s
+              plumber since 1895.</span>
+            </h2>
+            <div className="space-y-5 text-ink-muted leading-relaxed max-w-2xl">
+              <p>
+                Joe B. Sullivan founded the company in 1895, when Nashville
+                was still a city of about 80,000 people and indoor plumbing
+                was a luxury most homes were just beginning to add. Joe B.
+                ran his calls out of a downtown shop with a horse-drawn
+                wagon to haul fixtures and parts.
+              </p>
+              <p>
+                The business passed from Joe B. to his sons, then to his
+                grandsons, then to his great-grandsons — five generations
+                of Sullivans, each one training the next, each one keeping
+                the same name on the door. We&apos;ve moved the shop a few
+                times (we&apos;re now at 292 Hermitage Avenue in East
+                Nashville), upgraded the trucks from wagons to vans, and
+                swapped lead and galvanized fittings for PEX and copper.
+                The rest of the operation has stayed remarkably consistent
+                for 130 years.
+              </p>
+              <p>
+                Today Frank Sullivan is the licensed master plumber on
+                record. The phone still gets answered live, the trucks
+                still show up on time, and the name on the door is still
+                Sullivan.
+              </p>
+            </div>
+            <Link
+              href="/about"
+              className="inline-flex items-center gap-2 mt-8 font-semibold text-forest hover:text-copper-deep transition-colors"
+            >
+              Read the full story
+              <span aria-hidden>→</span>
+            </Link>
           </div>
         </div>
       </section>

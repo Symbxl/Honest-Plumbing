@@ -16,6 +16,8 @@ export type ServiceArea = {
   localContext: string;
   commonProblems: string[];
   drivingTime: string;
+  image: string;
+  imageAlt: string;
   geo: { latitude: number; longitude: number };
 };
 
@@ -40,6 +42,10 @@ export const areas: ServiceArea[] = [
       "Gas line undersizing on older homes converting to tankless",
     ],
     drivingTime: "On-site in 5–15 minutes from our Hermitage Avenue shop",
+    image:
+      "https://images.unsplash.com/photo-1556033681-83abea291a96?auto=format&fit=crop&w=1600&q=70",
+    imageAlt:
+      "East Nashville neighborhood — heritage residential plumbing service area",
     geo: { latitude: 36.181, longitude: -86.74 },
   },
   {
@@ -62,6 +68,10 @@ export const areas: ServiceArea[] = [
       "Steam unit valve and trap rebuild in heritage buildings",
     ],
     drivingTime: "On-site in 10–20 minutes from our shop",
+    image:
+      "https://images.unsplash.com/photo-1535498730771-e735b998cd64?auto=format&fit=crop&w=1600&q=70",
+    imageAlt:
+      "Downtown Nashville skyline — commercial plumbing and boiler service area",
     geo: { latitude: 36.1627, longitude: -86.7816 },
   },
   {
@@ -84,6 +94,10 @@ export const areas: ServiceArea[] = [
       "Real estate transaction sewer camera inspections",
     ],
     drivingTime: "On-site in 15–25 minutes from our shop",
+    image:
+      "https://images.unsplash.com/photo-1545419913-775e3e82c7db?auto=format&fit=crop&w=1600&q=70",
+    imageAlt:
+      "Green Hills residential street — Nashville plumbing service area",
     geo: { latitude: 36.106, longitude: -86.815 },
   },
   {
@@ -106,6 +120,10 @@ export const areas: ServiceArea[] = [
       "Sewer lateral repair under mature landscaping and hardscape",
     ],
     drivingTime: "On-site in 20–30 minutes from our shop",
+    image:
+      "https://images.unsplash.com/photo-1606762903097-713bf356b8c2?auto=format&fit=crop&w=1600&q=70",
+    imageAlt:
+      "Belle Meade and West Nashville — upscale residential plumbing service area",
     geo: { latitude: 36.116, longitude: -86.86 },
   },
   {
@@ -128,6 +146,10 @@ export const areas: ServiceArea[] = [
       "New construction and addition plumbing rough-ins",
     ],
     drivingTime: "On-site in 25–35 minutes from our shop",
+    image:
+      "https://images.unsplash.com/photo-1556033681-83abea291a96?auto=format&fit=crop&w=1600&q=70",
+    imageAlt:
+      "Brentwood, Tennessee residential street — Williamson County plumbing",
     geo: { latitude: 36.0331, longitude: -86.7828 },
   },
   {
@@ -150,6 +172,10 @@ export const areas: ServiceArea[] = [
       "New construction plumbing rough-ins for custom-home GCs",
     ],
     drivingTime: "On-site in 35–50 minutes from our shop",
+    image:
+      "https://images.unsplash.com/photo-1535498730771-e735b998cd64?auto=format&fit=crop&w=1600&q=70",
+    imageAlt:
+      "Franklin, Tennessee — Williamson County plumbing service area",
     geo: { latitude: 35.9251, longitude: -86.8689 },
   },
 ];

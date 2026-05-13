@@ -6,6 +6,8 @@ export type Service = {
   metaDescription: string;
   hero: string;
   intro: string;
+  image: string;
+  imageAlt: string;
   // Body content split into sections for SEO heading hierarchy.
   sections: { heading: string; body: string }[];
   faqs: { q: string; a: string }[];
@@ -22,6 +24,10 @@ export const services: Service[] = [
     metaDescription:
       "Nashville's longest-running water heater specialists. Repair, replacement, and installation of gas and electric tank water heaters. Warranty service for AO Smith, Bradford White, State, and Whirlpool.",
     hero: "Hot water back on. Today, usually.",
+    image:
+      "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=1600&q=70",
+    imageAlt:
+      "Plumber installing a residential gas water heater — Joe B. Sullivan & Sons Plumbing, Nashville",
     intro:
       "Joe B. Sullivan & Sons has been Nashville's go-to water heater company since 1895. We diagnose and repair gas, electric, and high-efficiency tank water heaters every day across Davidson and Williamson counties — and when a unit isn't worth saving, we install the right replacement and haul the old one away the same visit. We're authorized warranty service for AO Smith, Bradford White, State Industries, and Whirlpool, which means most warranty parts are covered and turnaround is fast.",
     sections: [
@@ -73,6 +79,10 @@ export const services: Service[] = [
     metaDescription:
       "Tankless water heater installation, repair, and descaling in Nashville. Rinnai, Navien, Noritz, and Rheem. Endless hot water, 18–22 year service life, and real Nashville-specific advice on whether it's worth it.",
     hero: "Endless hot water. Twenty years of it.",
+    image:
+      "https://images.unsplash.com/photo-1714894691666-e8bb020c781c?auto=format&fit=crop&w=1600&q=70",
+    imageAlt:
+      "Wall-mounted tankless water heater installation in a Nashville home",
     intro:
       "Tankless water heaters make sense for the right Nashville home — and don't for others. We install Rinnai, Navien, Noritz, and Rheem tankless units across the Nashville metro, and we'll tell you straight whether the conversion is worth the upfront cost for your specific house. We also do annual descaling and service on existing tankless units (Nashville's water is moderately hard and tankless units need yearly maintenance to hit their full service life).",
     sections: [
@@ -124,6 +134,10 @@ export const services: Service[] = [
     metaDescription:
       "Nashville's heritage commercial plumber. Boiler diagnostics and repair, commercial water heater service, steam unit repair, backflow, and new construction rough-ins. Licensed master plumber on every job.",
     hero: "Heritage commercial plumbing. Same family since 1895.",
+    image:
+      "https://images.unsplash.com/photo-1701421047855-d7bafd8d6f69?auto=format&fit=crop&w=1600&q=70",
+    imageAlt:
+      "Commercial boiler room with industrial piping — heritage commercial plumbing in Nashville",
     intro:
       "Joe B. Sullivan & Sons has been doing commercial plumbing in Nashville for five generations — we've serviced churches, schools, restaurants, retail buildings, multi-family properties, hotels, and industrial facilities across Davidson County. Our specialty within commercial work is boiler diagnostics, repair, and commercial water heater installation. When a 30-year-old building has a boiler nobody else wants to touch because the parts are obsolete, we usually have the part on the truck or know exactly where to source it.",
     sections: [
@@ -175,6 +189,10 @@ export const services: Service[] = [
     metaDescription:
       "Drain cleaning and unstopping across Nashville. Kitchen, bath, laundry, and main line clogs cleared with cable machine, hydro-jetting, and camera diagnostics. Same-day service in most cases.",
     hero: "Clog cleared. No mess left behind.",
+    image:
+      "https://images.unsplash.com/photo-1606340671662-27ee685dd111?auto=format&fit=crop&w=1600&q=70",
+    imageAlt:
+      "Plumber working on a drain line with professional tools in a Nashville home",
     intro:
       "Sullivan has cleared more drains across Nashville than we can count — kitchen sinks, bathroom lavatories, tub and shower drains, toilet stoppages, laundry standpipes, and main sewer line back-ups. We use cable machines for everyday clogs, hydro-jetting for grease and root intrusion, and a sewer camera when we need to see exactly what's happening fifty feet down the line. Most residential drain calls get same-day service.",
     sections: [
@@ -226,6 +244,10 @@ export const services: Service[] = [
     metaDescription:
       "Sewer line and water service line replacement in Nashville. Trenchless and traditional methods. Pipe replacement and repair for residential and commercial properties. Permitted, bonded, insured.",
     hero: "Underground pipe done right. No surprises.",
+    image:
+      "https://images.unsplash.com/photo-1668291048339-d33756311d80?auto=format&fit=crop&w=1600&q=70",
+    imageAlt:
+      "Sewer and water service line replacement work — Joe B. Sullivan & Sons, Nashville",
     intro:
       "When the sewer or water line under your Nashville property fails, the work needs to be done by people who know Metro Nashville Codes, Metro Water Services connection requirements, and how to navigate the permit and inspection process without delays. We replace sewer laterals and water service lines across Davidson and Williamson counties — both trenchless (where appropriate) and traditional open-trench methods.",
     sections: [
@@ -277,6 +299,10 @@ export const services: Service[] = [
     metaDescription:
       "Backflow installation, testing, and repair in Nashville. Natural gas line installation and repair for residential and commercial customers. Licensed, certified backflow tester. Metro Water compliant.",
     hero: "Code-compliant, permitted, signed off.",
+    image:
+      "https://images.unsplash.com/photo-1584774354932-62ceb99e6053?auto=format&fit=crop&w=1600&q=70",
+    imageAlt:
+      "Copper piping for backflow prevention and gas line work in Nashville",
     intro:
       "Backflow prevention and gas line work are the two areas of plumbing with the least margin for error — a failed backflow assembly contaminates a drinking water system, and a gas leak is a life-safety problem. Joe B. Sullivan & Sons does both routinely across Nashville: backflow installation, certified annual testing, and repair, plus natural gas line installation and repair for residential and commercial customers. Every job is permitted and inspected.",
     sections: [

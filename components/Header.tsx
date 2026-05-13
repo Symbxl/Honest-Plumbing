@@ -26,6 +26,9 @@ export function Header() {
           <Link href="/#reviews" className="hover:text-forest transition-colors">
             Reviews
           </Link>
+          <Link href="/#history" className="hover:text-forest transition-colors">
+            History
+          </Link>
           <Link href="/contact" className="hover:text-forest transition-colors">
             Contact
           </Link>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
@@ -124,12 +125,30 @@ export default function AboutPage() {
 
       {/* STORY */}
       <section className="py-16 lg:py-24">
-        <div className="max-w-3xl mx-auto px-6">
-          <p className="eyebrow mb-3">Our story</p>
-          <h2 className="font-display text-3xl lg:text-4xl text-ink mb-9 leading-tight">
-            How a one-shop Nashville plumber became a five-generation family
-            business.
-          </h2>
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="grid md:grid-cols-12 gap-10 md:gap-14 mb-12 items-start">
+            <div className="md:col-span-5">
+              <div className="relative aspect-[5/6] overflow-hidden rounded-sm shadow-[0_8px_30px_-12px_rgba(30,58,138,0.35)]">
+                <Image
+                  src="https://static.wixstatic.com/media/dfd6ea_bad44d2ba479b1cfe00b492ee345a6d0.jpg"
+                  alt="Paul and Joe Sullivan — Joe B. Sullivan & Sons Plumbing, Nashville"
+                  fill
+                  sizes="(min-width: 768px) 380px, 90vw"
+                  className="object-cover"
+                />
+              </div>
+              <p className="mt-4 text-xs uppercase tracking-[0.2em] text-ink-muted">
+                Pictured: Paul and Joe Sullivan
+              </p>
+            </div>
+            <div className="md:col-span-7">
+              <p className="eyebrow mb-3">Our story</p>
+              <h2 className="font-display text-3xl lg:text-4xl text-ink leading-tight">
+                How a one-shop Nashville plumber became a five-generation
+                family business.
+              </h2>
+            </div>
+          </div>
           <div className="prose-editorial">
             <p>
               Joe B. Sullivan founded the company in {siteConfig.business.foundingYear},

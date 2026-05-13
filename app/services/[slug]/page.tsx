@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -59,6 +60,22 @@ export default async function ServicePage({ params }: PageProps) {
       />
 
       <article>
+        {/* IMAGE BAND */}
+        <section className="relative h-[260px] sm:h-[340px] lg:h-[420px] overflow-hidden bg-forest-deep">
+          <Image
+            src={service.image}
+            alt={service.imageAlt}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover opacity-80"
+          />
+          <div
+            aria-hidden
+            className="absolute inset-0 bg-gradient-to-t from-forest-deep/70 via-forest-deep/30 to-transparent"
+          />
+        </section>
+
         {/* HERO */}
         <section className="py-16 lg:py-24 border-b border-ink/10">
           <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-12 gap-10 lg:gap-16">
