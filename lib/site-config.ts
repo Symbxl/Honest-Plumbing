@@ -6,63 +6,62 @@
 
 export const siteConfig = {
   // ---- Brand ----
-  name: "Mick Murray Deep Muscle Therapist",
-  shortName: "Mick Murray",
-  tagline: "Honest bodywork. Real results. Zero guesswork.",
+  name: "Joe B. Sullivan & Sons Plumbing",
+  shortName: "Joe B. Sullivan & Sons",
+  tagline: "Honest and Reliable Plumbing Since 1895",
   description:
-    "Licensed deep-tissue therapists and chiropractors serving Sydney and the greater NSW area. Same-week appointments, transparent flat-rate pricing, real lasting relief.",
+    "Family-owned commercial and residential plumbing in Nashville since 1895. Water heaters, boilers, drain cleaning, sewer & water line replacement, backflow, and gas lines. Warranty service for AO Smith, Bradford White, State Industries, and Whirlpool.",
 
   // ---- Domain (no trailing slash) ----
   // Used for canonical URLs, sitemap, Open Graph, JSON-LD.
-  url: "https://example.com",
+  url: "https://www.joebsullivanandsons.com",
 
   // ---- NAP (Name, Address, Phone) — critical for local SEO ----
   business: {
-    legalName: "Mick Murray Deep Muscle Therapist Pty Ltd",
-    phone: "+61-2-5550-0142",
-    phoneDisplay: "(02) 5550 0142",
-    email: "hello@example.com",
+    legalName: "Joe B. Sullivan & Sons Plumbing Co., Inc.",
+    phone: "+1-615-254-8379",
+    phoneDisplay: "(615) 254-8379",
+    email: "info@joebsullivanandsons.com",
     address: {
-      street: "1428 Darling Street",
-      city: "Balmain",
-      region: "NSW",
-      postalCode: "2041",
-      country: "AU",
+      street: "292 Hermitage Ave",
+      city: "Nashville",
+      region: "TN",
+      postalCode: "37210",
+      country: "US",
     },
     geo: {
-      latitude: -33.8568,
-      longitude: 151.1817,
+      latitude: 36.1561,
+      longitude: -86.7707,
     },
     hours: [
-      { day: "Mon", open: "08:00", close: "20:00" },
-      { day: "Tue", open: "08:00", close: "20:00" },
-      { day: "Wed", open: "08:00", close: "20:00" },
-      { day: "Thu", open: "08:00", close: "20:00" },
-      { day: "Fri", open: "08:00", close: "19:00" },
-      { day: "Sat", open: "09:00", close: "17:00" },
+      { day: "Mon", open: "08:00", close: "16:30" },
+      { day: "Tue", open: "08:00", close: "16:30" },
+      { day: "Wed", open: "08:00", close: "16:30" },
+      { day: "Thu", open: "08:00", close: "16:30" },
+      { day: "Fri", open: "08:00", close: "16:30" },
+      { day: "Sat", closed: true },
       { day: "Sun", closed: true },
     ],
     priceRange: "$$",
-    foundingYear: 2009,
-    license: "AHPRA Reg# CHI0001234567 · AAMT Member #M60123456",
-    rating: { value: 5.0, count: 612 },
+    foundingYear: 1895,
+    license: "Licensed Master Plumber: Frank Sullivan · Licensed, Bonded & Insured",
+    rating: { value: 4.9, count: 187 },
   },
 
   // ---- Social ----
   social: {
-    facebook: "https://facebook.com/example",
-    instagram: "https://instagram.com/example",
-    google: "https://maps.google.com/example",
-    yelp: "https://yelp.com/example",
+    facebook: "https://www.facebook.com/SullivanJoeBSonsPlumbing",
+    google: "https://maps.google.com/?q=Joe+B+Sullivan+Sons+Plumbing+Nashville",
   },
 
   // ---- Primary keyword cluster (for meta + content) ----
   primaryKeywords: [
-    "Sydney massage therapist",
-    "deep tissue massage Sydney",
-    "chiropractor Sydney",
-    "sports massage Sydney",
-    "myofascial release Sydney",
+    "Nashville plumber",
+    "plumbing Nashville TN",
+    "water heater repair Nashville",
+    "tankless water heater Nashville",
+    "commercial plumbing Nashville",
+    "sewer line replacement Nashville",
   ],
 } as const;
 

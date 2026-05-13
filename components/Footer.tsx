@@ -77,7 +77,7 @@ export function Footer() {
                 {addr.city}, {addr.region} {addr.postalCode}
               </div>
               <div className="pt-3 text-xs text-bone-50/60">
-                Mon–Thu 8AM–8PM · Fri 8AM–7PM · Sat 9AM–5PM · Closed Sun
+                Mon–Fri 8AM–4:30PM · Closed Sat & Sun · After-hours emergencies via main line
               </div>
             </address>
           </div>

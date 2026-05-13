@@ -5,20 +5,20 @@ import { siteConfig } from "@/lib/site-config";
 import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata: Metadata = {
-  title: "Insights & Bodywork Guides",
+  title: "Insights & Plumbing Guides",
   description:
-    "Real, detailed Sydney bodywork guides from working clinicians. Treatment pricing, what to expect, and what to actually do when something hurts. No fluff.",
+    "Real, detailed Nashville plumbing guides from working master plumbers. Service pricing, what to expect, and honest answers about repair vs. replace. No fluff.",
   alternates: { canonical: `${siteConfig.url}/blog` },
   openGraph: {
-    title: "Bodywork Insights | Cedar & Co. Sydney",
+    title: "Plumbing Insights | Joe B. Sullivan & Sons Nashville",
     description:
-      "Detailed Sydney bodywork and chiropractic guides — pricing, conditions, and how to choose a clinician.",
+      "Detailed Nashville plumbing guides — pricing, common problems, and how to choose a licensed plumber.",
     url: `${siteConfig.url}/blog`,
   },
 };
 
 function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString("en-AU", {
+  return new Date(iso).toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -56,19 +56,20 @@ export default function BlogIndexPage() {
           </nav>
 
           <div className="max-w-3xl">
-            <p className="eyebrow mb-4">Insights · From the clinic</p>
+            <p className="eyebrow mb-4">Insights · From the shop</p>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.05] text-ink mb-6">
-              Bodywork knowledge,{" "}
-              <span className="italic text-forest">written by clinicians</span>{" "}
+              Plumbing knowledge,{" "}
+              <span className="italic text-forest">written by master plumbers</span>{" "}
               who actually do the work.
             </h1>
             <p className="text-lg text-ink-muted leading-relaxed">
-              Every guide on this page is written by a Cedar & Co. clinician
-              based on real Sydney patients — real session pricing, real
-              clinical reasoning, real conditions. We update the numbers when
-              they change. No SEO filler, no &quot;ultimate guide&quot;
-              nonsense, no affiliate-link traps. Just useful answers to the
-              questions our patients actually ask us.
+              Every guide on this page is written by a Joe B. Sullivan & Sons
+              plumber based on real Nashville jobs — real installed pricing,
+              real diagnostic reasoning, real Nashville-area conditions. We
+              update the numbers when they change. No SEO filler, no
+              &quot;ultimate guide&quot; nonsense, no affiliate-link traps.
+              Just useful answers to the questions our customers actually ask
+              us.
             </p>
           </div>
         </div>
@@ -131,7 +132,7 @@ export default function BlogIndexPage() {
       {/* OTHER POSTS */}
       <section className="py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <p className="eyebrow mb-6">More from the Cedar & Co. clinic</p>
+          <p className="eyebrow mb-6">More from the Sullivan shop</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {rest.map((post, idx) => (
               <Link
@@ -176,10 +177,10 @@ export default function BlogIndexPage() {
         <div className="max-w-3xl mx-auto px-6 text-center">
           <p className="eyebrow mb-3">Have a question we haven&apos;t covered?</p>
           <h2 className="font-display text-3xl text-ink mb-5 leading-tight">
-            Ask a Cedar & Co. clinician directly.
+            Ask a Sullivan plumber directly.
           </h2>
           <p className="text-ink-muted leading-relaxed mb-7">
-            Phone questions are free, even if you&apos;re not ready to book.
+            Phone questions are free, even if you&apos;re not ready to schedule.
             Tell us what&apos;s happening and we&apos;ll give you a straight
             answer.
           </p>

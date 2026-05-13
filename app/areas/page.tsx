@@ -6,14 +6,14 @@ import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata: Metadata = {
   title: "Service Areas",
-  description: `Cedar & Co. Bodywork serves ${areas
+  description: `Joe B. Sullivan & Sons Plumbing serves ${areas
     .map((a) => a.name)
-    .join(", ")} and surrounding Sydney suburbs. Same-week appointments, registered chiropractors and remedial therapists.`,
+    .join(", ")} and the wider Nashville metro. Same-day service in most cases, licensed master plumber on every job.`,
   alternates: { canonical: `${siteConfig.url}/areas` },
   openGraph: {
-    title: "Sydney Bodywork & Chiropractic Service Areas | Cedar & Co.",
+    title: "Nashville Plumbing Service Areas | Joe B. Sullivan & Sons",
     description:
-      "Sydney bodywork clinic serving Balmain, Glebe, Surry Hills, Manly, North Sydney, and Hornsby.",
+      "Nashville plumber serving East Nashville, downtown, Green Hills, Belle Meade, Brentwood, and Franklin.",
     url: `${siteConfig.url}/areas`,
   },
 };
@@ -46,19 +46,21 @@ export default function AreasPage() {
           <div className="max-w-3xl">
             <p className="eyebrow mb-4">Where we work</p>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.05] text-ink mb-6">
-              Bodywork & chiropractic across{" "}
-              <span className="italic text-forest">Sydney</span> — Inner West
+              Plumbing across{" "}
+              <span className="italic text-forest">Nashville</span> — East side
               to{" "}
-              <span className="italic text-forest">North Shore.</span>
+              <span className="italic text-forest">Williamson County.</span>
             </h1>
             <p className="text-lg text-ink-muted leading-relaxed">
-              Cedar & Co. is a Sydney local — our clinic has been on Darling
-              Street since 2009, and we see patients from across the city.
-              We know which suburbs run hot on engineering-table neck, which
-              ones bring in surf and ocean-swim shoulder injuries, and which
-              cycling loops are putting locals in our waiting room every
-              spring. Local knowledge isn&apos;t a marketing line — it&apos;s
-              how we triage faster and treat more accurately.
+              Joe B. Sullivan & Sons has been a Nashville local since 1895 —
+              our shop has been here longer than most of the buildings we
+              service. We know which neighborhoods still have clay sewer
+              laterals at the end of their service life, which 1920s bungalows
+              are running on galvanized supply lines, and which Brentwood
+              subdivisions have undersized gas lines for tankless conversions.
+              Local knowledge isn&apos;t a marketing line — it&apos;s why we
+              diagnose faster and quote more accurately than the national
+              chains.
             </p>
           </div>
         </div>
@@ -92,7 +94,7 @@ export default function AreasPage() {
                   {area.intro.split(".")[0]}.
                 </p>
                 <span className="text-sm font-semibold text-forest inline-flex items-center gap-2 mt-auto">
-                  See {area.name} bodywork details
+                  See {area.name} plumbing details
                   <span aria-hidden className="transition-transform group-hover:translate-x-1">
                     →
                   </span>
@@ -111,12 +113,11 @@ export default function AreasPage() {
             We probably still cover you.
           </h2>
           <p className="text-ink-muted leading-relaxed mb-7">
-            We regularly see patients from Pyrmont, Ultimo, Annandale,
-            Leichhardt, Rozelle, Drummoyne, Marrickville, Erskineville,
-            Chippendale, Redfern, Paddington, Bondi Junction, Mosman,
-            Neutral Bay, and Lane Cove. Give us a ring and we&apos;ll tell
-            you straight whether we&apos;re the right fit or whether someone
-            closer would serve you better.
+            We regularly serve Inglewood, Madison, Hermitage, Donelson, Hillsboro
+            Village, Belmont, 12 South, The Nations, Sylvan Park, Bellevue,
+            Forest Hills, Oak Hill, Berry Hill, Antioch, and Nolensville. Give
+            us a call and we&apos;ll tell you straight whether we&apos;re the
+            right fit or whether someone closer would serve you better.
           </p>
           <a
             href={`tel:${siteConfig.business.phone}`}

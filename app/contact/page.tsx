@@ -5,12 +5,12 @@ import { BreadcrumbSchema } from "@/components/Schema";
 import { LeadForm } from "@/components/LeadForm";
 
 export const metadata: Metadata = {
-  title: "Contact Cedar & Co. Bodywork",
-  description: `Call ${siteConfig.business.phoneDisplay} or send a message — Cedar & Co. Bodywork on Darling Street, Balmain. Same-week appointments, AHPRA-registered chiropractors, AAMT-member remedial therapists.`,
+  title: "Contact Joe B. Sullivan & Sons Plumbing",
+  description: `Call ${siteConfig.business.phoneDisplay} or send a message — Joe B. Sullivan & Sons Plumbing at 292 Hermitage Avenue, Nashville. Same-day service in most cases, licensed master plumber on every job.`,
   alternates: { canonical: `${siteConfig.url}/contact` },
   openGraph: {
-    title: `Contact ${siteConfig.shortName} | Sydney Bodywork & Chiropractic`,
-    description: `Reach Cedar & Co. Bodywork. Phone, email, address, and online booking.`,
+    title: `Contact ${siteConfig.shortName} | Nashville Plumbing Since 1895`,
+    description: `Reach Joe B. Sullivan & Sons Plumbing. Phone, email, address, and online quote request.`,
     url: `${siteConfig.url}/contact`,
   },
 };
@@ -70,7 +70,7 @@ export default function ContactPage() {
             <p className="text-lg text-ink-muted leading-relaxed">
               We answer the phone live during business hours. Use the form if
               you prefer — we reply within an hour during the day, by 9 AM the
-              next morning if you write at night.
+              next business day if you write after hours.
             </p>
           </div>
         </div>
@@ -91,9 +91,9 @@ export default function ContactPage() {
                 {business.phoneDisplay}
               </a>
               <p className="text-sm text-ink-muted mt-3 leading-relaxed">
-                Live answer during business hours, no phone tree. After hours
-                you&apos;ll reach voicemail and we&apos;ll call back the next
-                morning.
+                Live answer during business hours, no phone tree. After-hours
+                emergencies reach the on-call plumber via our main number and
+                voice prompts.
               </p>
             </div>
 
@@ -107,14 +107,14 @@ export default function ContactPage() {
                 {business.email}
               </a>
               <p className="text-sm text-ink-muted mt-3 leading-relaxed">
-                Best for new-patient questions, scheduling, or asking which
-                clinician would be the best match for your case.
+                Best for quote requests, scheduling non-emergency work, or
+                asking about warranty service on a unit we installed.
               </p>
             </div>
 
             {/* ADDRESS */}
             <div>
-              <p className="eyebrow mb-3">Clinic address</p>
+              <p className="eyebrow mb-3">Shop address</p>
               <address className="font-display text-2xl text-ink not-italic leading-tight">
                 {business.address.street}
                 <br />
@@ -122,9 +122,10 @@ export default function ContactPage() {
                 {business.address.postalCode}
               </address>
               <p className="text-sm text-ink-muted mt-3 leading-relaxed">
-                Walk-ins welcome, but call ahead — same-week appointments fill
-                fast. Two-hour metered parking on Darling Street, free parking
-                on the side streets.
+                Our shop in East Nashville is open during business hours for
+                pickups, warranty drop-offs, and quote consults. Most service
+                calls go directly to your address — we&apos;ll dispatch the
+                truck rather than ask you to come in.
               </p>
               <a
                 href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
@@ -162,22 +163,22 @@ export default function ContactPage() {
                 ))}
               </dl>
               <p className="text-xs text-ink-muted mt-3">
-                Closed Sundays. We return after-hours messages by 9 AM the
-                next business day.
+                Closed Saturdays and Sundays. After-hours emergency plumbing
+                line answered through our main number.
               </p>
             </div>
 
             {/* LICENSE */}
             <div className="card-press p-5 bg-bone-100/40">
               <p className="text-xs text-copper-deep tracking-[0.2em] uppercase mb-1">
-                Registration
+                Licensed master plumber
               </p>
               <p className="font-display text-base text-ink">
                 {business.license}
               </p>
               <p className="text-xs text-ink-muted mt-1">
-                Insured · HICAPS on-site · {business.priceRange} ·
-                Family-owned since {business.foundingYear}
+                Bonded · Insured · {business.priceRange} · Family-owned
+                Nashville plumber since {business.foundingYear}
               </p>
             </div>
           </div>
@@ -187,7 +188,7 @@ export default function ContactPage() {
             <div className="lg:sticky lg:top-28">
               <p className="eyebrow mb-3">Send a message</p>
               <h2 className="font-display text-3xl lg:text-4xl text-ink mb-7 leading-tight">
-                Tell us what&apos;s going on with your body.
+                Tell us what&apos;s going on with the plumbing.
               </h2>
               <LeadForm />
             </div>
@@ -208,11 +209,11 @@ export default function ContactPage() {
           <div className="max-w-4xl mx-auto px-6 text-center relative">
             <p className="eyebrow text-copper-light mb-3">Serving</p>
             <p className="font-display text-2xl lg:text-3xl leading-snug">
-              Inner West · CBD · Eastern Suburbs · North Shore
+              East Nashville · Downtown · Green Hills · Belle Meade · Brentwood · Franklin
             </p>
             <p className="text-bone-100/70 mt-4 text-sm">
-              {Math.abs(business.geo.latitude).toFixed(4)}° S,{" "}
-              {business.geo.longitude.toFixed(4)}° E
+              {business.geo.latitude.toFixed(4)}° N,{" "}
+              {Math.abs(business.geo.longitude).toFixed(4)}° W
             </p>
             <a
               href={`https://www.google.com/maps/search/?api=1&query=${business.geo.latitude},${business.geo.longitude}`}

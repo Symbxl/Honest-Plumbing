@@ -79,7 +79,7 @@ export default async function AreaPage({ params }: PageProps) {
                 {area.parentRegion} · {area.zip.join(" · ")}
               </p>
               <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.05] text-ink mb-6">
-                Massage & Chiropractor in{" "}
+                Plumber in{" "}
                 <span className="italic text-forest">{area.name}</span>
               </h1>
               <p className="font-display italic text-2xl text-ink-soft mb-7">
@@ -101,7 +101,7 @@ export default async function AreaPage({ params }: PageProps) {
           <div className="max-w-3xl mx-auto px-6">
             <p className="eyebrow mb-3">What we see in {area.name}</p>
             <h2 className="font-display text-3xl lg:text-4xl text-ink mb-7 leading-tight">
-              The bodywork reality of {area.name}.
+              The plumbing reality of {area.name}.
             </h2>
             <div className="prose-editorial">
               <p>{area.localContext}</p>
@@ -112,9 +112,9 @@ export default async function AreaPage({ params }: PageProps) {
         {/* COMMON PROBLEMS */}
         <section className="bg-bone-100/60 border-y border-ink/10 py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-6">
-            <p className="eyebrow mb-3">{area.name} patient patterns</p>
+            <p className="eyebrow mb-3">{area.name} plumbing patterns</p>
             <h2 className="font-display text-3xl lg:text-4xl text-ink mb-10 leading-tight">
-              Common issues we treat in{" "}
+              Common issues we handle in{" "}
               <span className="italic text-forest">{area.name}</span>.
             </h2>
             <ul className="space-y-4">
@@ -139,7 +139,7 @@ export default async function AreaPage({ params }: PageProps) {
             <div className="max-w-2xl mb-10">
               <p className="eyebrow mb-3">Services available</p>
               <h2 className="font-display text-3xl lg:text-4xl text-ink leading-tight">
-                Every Cedar & Co. treatment is available to {area.name} patients.
+                Every Sullivan service is available to {area.name} customers.
               </h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -159,7 +159,7 @@ export default async function AreaPage({ params }: PageProps) {
                     {service.hero}
                   </p>
                   <span className="mt-4 text-sm font-semibold text-forest inline-flex items-center gap-2">
-                    {service.shortName} for {area.name} patients
+                    {service.shortName} for {area.name} customers
                     <span
                       aria-hidden
                       className="transition-transform group-hover:translate-x-1"
@@ -200,9 +200,9 @@ export default async function AreaPage({ params }: PageProps) {
         {/* CTA */}
         <section className="bg-forest text-bone-50 py-20">
           <div className="max-w-4xl mx-auto px-6 text-center">
-            <p className="eyebrow text-copper-light mb-3">{area.name} care</p>
+            <p className="eyebrow text-copper-light mb-3">{area.name} service</p>
             <h2 className="font-display text-3xl lg:text-4xl mb-6 leading-tight">
-              Need bodywork in {area.name} this week?
+              Need a plumber in {area.name}?
               <br />
               <span className="italic">{area.drivingTime}.</span>
             </h2>

@@ -10,7 +10,7 @@ export function LocalBusinessSchema() {
   const b = siteConfig.business;
   const schema = {
     "@context": "https://schema.org",
-    "@type": "Chiropractor", // LocalBusiness subtype that covers chiropractic + bodywork practices
+    "@type": "Plumber", // LocalBusiness subtype for plumbing businesses
     "@id": `${siteConfig.url}#business`,
     name: siteConfig.name,
     legalName: b.legalName,
@@ -49,7 +49,7 @@ export function LocalBusinessSchema() {
     })),
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Bodywork & Chiropractic Services",
+      name: "Plumbing Services",
       itemListElement: services.map((s) => ({
         "@type": "Offer",
         itemOffered: {

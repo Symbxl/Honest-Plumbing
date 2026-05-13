@@ -15,21 +15,21 @@ export const metadata: Metadata = {
 const testimonials = [
   {
     quote:
-      "Six months of chronic neck pain, three failed physio clinics, two MRIs. Marcus mapped what was actually happening in three visits, fixed it in eight. I haven't taken ibuprofen in fourteen weeks.",
-    name: "Hannah L.",
-    location: "Balmain",
+      "Very knowledgeable — especially with old style parts — and always very nice. They get the job done!",
+    name: "John T.",
+    location: "East Nashville",
   },
   {
     quote:
-      "Two other clinics told me I needed a $4,500 12-session 'recovery package' to address my back. Cedar & Co. said three sessions would tell us a lot. Three sessions later I was back on the bike. They could have upsold me and didn't.",
-    name: "Robert M.",
-    location: "Glebe",
+      "Fair and honest, and that's what matters. You are top notch! Three other Nashville plumbers told us our 1940s water heater closet wasn't fixable. Sullivan had it sorted the same afternoon.",
+    name: "Marco C.",
+    location: "Belle Meade",
   },
   {
     quote:
-      "They actually do deep tissue at deep tissue pressure — and the chiropractor and massage therapist work in the same visit when it makes sense. First clinic in Sydney that's felt like a real medical team rather than a spa with a chiropractor in the back.",
-    name: "Priya K.",
-    location: "Surry Hills",
+      "Sullivan Plumbing came out on a holiday to repair my water heater. Quick, reliable, and didn't try to upsell us on a tankless we didn't need.",
+    name: "Steven G.",
+    location: "Green Hills",
   },
 ];
 
@@ -53,17 +53,18 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12 pt-16 lg:pt-24 pb-20 grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           <div className="lg:col-span-7 animate-fade-up">
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl leading-[0.95] text-ink mb-7">
-              Mick Murray{" "}
+              Honest, reliable{" "}
               <span className="brush-underline italic text-forest">
-                deep muscle
+                Nashville plumbing
               </span>{" "}
-              therapist
+              since 1895.
             </h1>
 
             <p className="text-lg text-ink-muted max-w-xl leading-relaxed mb-9">
-              Clinical soft tissue therapist twenty eight years experience.
-              Specialising in direct myofascial release techniques, joint
-              mobilisation techniques & deep muscle therapy massage.
+              Family-owned commercial and residential plumbing — five
+              generations of Nashville master plumbers. Water heaters, boilers,
+              drains, sewer lines, and gas service. Authorized warranty for AO
+              Smith, Bradford White, State Industries, and Whirlpool.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-12">
@@ -75,7 +76,7 @@ export default function HomePage() {
                 Call {siteConfig.business.phoneDisplay}
               </a>
               <Link href="/services" className="btn-secondary inline-flex">
-                Browse treatments
+                Our services
               </Link>
             </div>
 
@@ -94,12 +95,13 @@ export default function HomePage() {
           <div className="max-w-2xl mb-14">
             <p className="eyebrow mb-3">What we do</p>
             <h2 className="font-display text-4xl lg:text-5xl text-ink leading-tight">
-              Six treatments, done exceptionally well.
+              Six services. Done right the first time.
             </h2>
             <p className="text-ink-muted mt-4 max-w-xl">
-              We don&apos;t do facials, hot stones, or aromatherapy. We do
-              clinical bodywork and chiropractic — and we do them better than
-              anyone in Sydney.
+              Five generations of Nashville master plumbers means we&apos;ve
+              seen what your house has — heritage pipe, obsolete parts,
+              warranty-eligible water heaters, and the kind of old-building
+              problems most plumbers won&apos;t touch.
             </p>
           </div>
 
@@ -172,15 +174,16 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
             <div className="lg:col-span-5">
-              <p className="eyebrow text-copper-light mb-3">Who we serve</p>
+              <p className="eyebrow text-copper-light mb-3">Where we work</p>
               <h2 className="font-display text-4xl lg:text-5xl leading-tight mb-6">
-                Local. Actually local.
+                Nashville locals. Five generations.
               </h2>
               <p className="text-bone-50/80 leading-relaxed mb-8">
-                Our clinic is in Balmain. We see patients from across Sydney —
-                the Inner West, the CBD, the Eastern Suburbs, and the North
-                Shore — and we keep our caseload tight so we can actually know
-                your case across visits instead of starting over each time.
+                Our shop is at 292 Hermitage Avenue in East Nashville. We
+                service Davidson and Williamson counties — East Nashville,
+                downtown, Green Hills, Belle Meade, Brentwood, and Franklin
+                are our steadiest service areas, but we cover the entire
+                Nashville metro.
               </p>
               <Link
                 href="/areas"
@@ -217,7 +220,7 @@ export default function HomePage() {
             <div className="max-w-2xl">
               <p className="eyebrow mb-3">From the clinic</p>
               <h2 className="font-display text-4xl lg:text-5xl text-ink leading-tight">
-                Real bodywork answers, written by therapists.
+                Real plumbing answers, written by Nashville plumbers.
               </h2>
             </div>
             <Link
@@ -236,7 +239,7 @@ export default function HomePage() {
                 className="card-press p-7 flex flex-col h-full"
               >
                 <div className="text-xs uppercase tracking-wider text-ink-muted mb-3">
-                  {new Date(p.publishedDate).toLocaleDateString("en-AU", {
+                  {new Date(p.publishedDate).toLocaleDateString("en-US", {
                     month: "long",
                     day: "numeric",
                     year: "numeric",
@@ -274,12 +277,12 @@ export default function HomePage() {
           <h2 className="font-display text-4xl lg:text-5xl text-ink leading-tight mb-6">
             Pick up the phone or fill out the form.
             <br />
-            <span className="italic text-forest">We&apos;ll do the rest.</span>
+            <span className="italic text-forest">We&apos;ll handle it.</span>
           </h2>
           <p className="text-ink-muted mb-9 max-w-xl mx-auto">
-            Most calls reach a real person inside business hours. New-patient
-            appointments usually open up the same week. Flat-rate session
-            pricing — no packages, no upsells, no recurring billing.
+            We answer the phone live during business hours. Most service calls
+            are scheduled same-day or next-day. Flat-price quotes — no surprise
+            mid-job add-ons, no packages you don&apos;t need.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a

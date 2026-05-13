@@ -44,7 +44,7 @@ export async function generateMetadata({
 }
 
 function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString("en-AU", {
+  return new Date(iso).toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -238,10 +238,10 @@ export default async function BlogPostPage({ params }: PageProps) {
         {/* INLINE LEAD FORM */}
         <section className="py-14 lg:py-20">
           <div className="max-w-2xl mx-auto px-6">
-            <p className="eyebrow mb-3 text-center">Ready to book?</p>
+            <p className="eyebrow mb-3 text-center">Ready to schedule?</p>
             <h2 className="font-display text-3xl text-ink mb-7 leading-tight text-center">
-              Get a <span className="italic text-forest">straight assessment</span>{" "}
-              from a registered clinician.
+              Get a <span className="italic text-forest">flat-price quote</span>{" "}
+              from a licensed Nashville plumber.
             </h2>
             <LeadForm />
           </div>

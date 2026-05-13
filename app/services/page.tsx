@@ -5,9 +5,9 @@ import { siteConfig } from "@/lib/site-config";
 import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata: Metadata = {
-  title: "Bodywork & Chiropractic Treatments in Sydney",
+  title: "Plumbing Services in Nashville",
   description:
-    "Cedar & Co. treatments across Sydney: deep tissue massage, chiropractic adjustment, sports recovery, myofascial release, postural correction, and cupping. Flat-rate session pricing.",
+    "Joe B. Sullivan & Sons plumbing services across Nashville: water heater repair and installation, tankless conversions, commercial boiler service, drain cleaning, sewer and water line replacement, backflow and gas line work.",
   alternates: { canonical: `${siteConfig.url}/services` },
 };
 
@@ -23,14 +23,15 @@ export default function ServicesIndex() {
       <section className="py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="max-w-3xl mb-16">
-            <p className="eyebrow mb-4">Treatments</p>
+            <p className="eyebrow mb-4">Services</p>
             <h1 className="font-display text-5xl lg:text-6xl leading-[1.05] text-ink mb-6">
-              Bodywork & chiropractic across Sydney.
+              Plumbing services across Nashville.
             </h1>
             <p className="text-lg text-ink-muted leading-relaxed">
-              Six core treatments. No upsells, no 12-pack pre-pays, no
-              recurring billing. Pick what you need below — every treatment
-              page lists the actual flat-rate session price.
+              Six core services. Residential and commercial. Flat-price quotes,
+              licensed master plumber on every job, authorized warranty for AO
+              Smith, Bradford White, State Industries, and Whirlpool. Pick the
+              service below and see real pricing.
             </p>
           </div>
 

@@ -6,12 +6,12 @@ import { services } from "@/lib/services";
 import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata: Metadata = {
-  title: "About Cedar & Co. Bodywork",
-  description: `Family-owned Sydney bodywork and chiropractic clinic since ${siteConfig.business.foundingYear}. AHPRA-registered chiropractors and AAMT-member massage therapists serving Balmain, the Inner West, and the North Shore.`,
+  title: "About Joe B. Sullivan & Sons Plumbing",
+  description: `Family-owned Nashville plumbing company since ${siteConfig.business.foundingYear}. Licensed master plumbers serving Davidson and Williamson counties — commercial and residential, with warranty service for AO Smith, Bradford White, State Industries, and Whirlpool.`,
   alternates: { canonical: `${siteConfig.url}/about` },
   openGraph: {
-    title: "About Cedar & Co. Bodywork | Sydney's Local Therapy Clinic",
-    description: `Family-owned Sydney bodywork clinic since ${siteConfig.business.foundingYear}.`,
+    title: "About Joe B. Sullivan & Sons | Nashville's Heritage Plumbing Company",
+    description: `Family-owned Nashville plumbing since ${siteConfig.business.foundingYear}.`,
     url: `${siteConfig.url}/about`,
   },
 };
@@ -20,20 +20,20 @@ const yearsInBusiness = new Date().getFullYear() - siteConfig.business.foundingY
 
 const valueProps = [
   {
-    title: "Flat-rate session pricing",
-    body: "Every treatment is one published price. No mysterious 'package upgrades,' no recurring billing, no high-pressure 12-session pre-pays. You pay for the visit you took and book the next one if and when you want to.",
+    title: "Flat-price quotes, no surprises",
+    body: "Every job is quoted as a flat price after diagnosis — parts, labor, permit, haul-away, and warranty registration all itemized. No per-hour open meter, no mid-job upcharges, no 'we found something extra' once we've started. The number we tell you up front is the number you pay.",
   },
   {
-    title: "Registered clinicians on every visit",
-    body: "Every patient is seen by an AHPRA-registered chiropractor or AAMT-member remedial massage therapist — never an unlicensed assistant. New-patient visits include a 15-minute assessment with the lead therapist before any hands-on work begins.",
+    title: "Licensed master plumber on every job",
+    body: "Frank Sullivan is the licensed Tennessee master plumber on record for every Joe B. Sullivan & Sons job. Verifiable on the state board. Every install and repair is supervised by a licensed master plumber — not handed off to an apprentice running solo.",
   },
   {
-    title: "Honest treatment plans, not packages",
-    body: "Most issues respond in 3 to 8 visits. We tell you that on visit one and we tell you when to stop coming. If we can't help your case, we'll refer you out — to physio, ortho, or sports medicine — and we won't charge you for the referral.",
+    title: "Honest answers about repair vs. replace",
+    body: "Most of what other plumbers tell you needs replacement, we can actually repair. We carry parts for obsolete fixtures, old water heaters, and pre-war steam units — and we'll tell you straight when something genuinely needs replacing and when a $200 repair will buy you another five years.",
   },
   {
-    title: "Same therapist, every visit",
-    body: "Continuity matters. You'll see the same therapist or chiropractor each visit so the work compounds. If your therapist is out, we'll reschedule rather than hand you off to whoever has an open slot.",
+    title: "Authorized warranty service",
+    body: "We're authorized warranty service for AO Smith, Bradford White, State Industries, and Whirlpool water heaters. That means warranty parts claims are filed by us, the repair is fast, and you don't deal with the manufacturer. Most coverage gets handled in a single visit.",
   },
 ];
 
@@ -68,28 +68,28 @@ export default function AboutPage() {
 
           <div className="max-w-3xl">
             <p className="eyebrow mb-4">
-              Family-owned · Balmain since {siteConfig.business.foundingYear}
+              Family-owned · Nashville since {siteConfig.business.foundingYear}
             </p>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.05] text-ink mb-7">
-              We&apos;re a small Sydney bodywork clinic —{" "}
-              <span className="italic text-forest">not a chain</span>, not a
-              spa, not a private equity rollup.
+              We&apos;re Nashville&apos;s heritage plumbing company —{" "}
+              <span className="italic text-forest">five generations</span> of
+              Sullivans on the same family business.
             </h1>
             <p className="text-lg text-ink-muted leading-relaxed">
-              {siteConfig.shortName} was started in {siteConfig.business.foundingYear}{" "}
-              by Marcus Reyes, registered chiropractor and remedial massage
-              therapist, who got tired of watching corporate wellness chains
-              run 30-minute "deep tissue" sessions for $130 and clinics
-              hard-sell 12-visit packages on day one. We opened a small clinic
-              on Darling Street, hired clinicians who could actually evaluate,
-              and built the practice on a simple idea:{" "}
+              {siteConfig.shortName} was founded in {siteConfig.business.foundingYear}, and
+              we&apos;ve been the same family ever since. {yearsInBusiness}{" "}
+              years in Nashville means we&apos;ve plumbed buildings most people
+              have never set foot in — pre-war boilers under Church Street
+              office buildings, steam radiators in 1910s East Nashville
+              bungalows, restaurant kitchens up and down Broadway, and now
+              tankless installs in Brentwood new-builds. Frank Sullivan is the
+              licensed master plumber on record. The phone gets answered live,
+              the truck shows up when we say it will, and the quote you get is
+              flat-price and itemized.{" "}
               <em>
-                tell people what&apos;s actually going on, charge a fair price
-                for each visit, and stop the treatment when it&apos;s no
-                longer needed.
-              </em>{" "}
-              {yearsInBusiness} years later, that&apos;s still the whole job
-              description.
+                Honest and reliable plumbing — that&apos;s been the entire
+                business model since 1895.
+              </em>
             </p>
           </div>
         </div>
@@ -101,14 +101,14 @@ export default function AboutPage() {
           {[
             {
               value: yearsInBusiness.toString(),
-              label: "Years in Sydney",
+              label: "Years in Nashville",
             },
             {
-              value: siteConfig.business.rating.count.toLocaleString() + "+",
-              label: `${siteConfig.business.rating.value.toFixed(1)}★ reviews`,
+              value: "5th",
+              label: "Generation Sullivans",
             },
-            { value: "100%", label: "Licensed clinicians" },
-            { value: "Same", label: "Therapist every visit" },
+            { value: "100%", label: "Licensed & insured" },
+            { value: "Flat", label: "Price quotes always" },
           ].map((s) => (
             <div key={s.label}>
               <div className="font-display text-4xl lg:text-5xl text-forest leading-none">
@@ -127,38 +127,41 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto px-6">
           <p className="eyebrow mb-3">Our story</p>
           <h2 className="font-display text-3xl lg:text-4xl text-ink mb-9 leading-tight">
-            How a one-room Balmain practice became Sydney&apos;s
-            most-recommended bodywork clinic.
+            How a one-shop Nashville plumber became a five-generation family
+            business.
           </h2>
           <div className="prose-editorial">
             <p>
-              Marcus Reyes trained as a remedial massage therapist in
-              Melbourne, then completed his Master of Chiropractic at Macquarie
-              University. He spent his early thirties working for two
-              different multi-location wellness chains across Sydney — and
-              watched both get acquired by overseas holding companies that
-              immediately raised prices, cut session times, and started
-              pushing every patient into 12-visit pre-paid &ldquo;wellness
-              plans&rdquo; before the first assessment had finished.
+              Joe B. Sullivan founded the company in {siteConfig.business.foundingYear},
+              when Nashville was still a city of about 80,000 people, water
+              mains were just being run to outlying neighborhoods, and indoor
+              plumbing was a new luxury most homes were still adding. Joe B.
+              learned the trade as an apprentice, got his master plumber
+              ticket, and started running calls out of a shop near downtown
+              with a horse-drawn wagon to haul fixtures.
             </p>
             <p>
-              In {siteConfig.business.foundingYear}, Marcus quit and opened
-              Cedar & Co. out of a single rented treatment room above a
-              Balmain café. The first ten patients came from neighbours. The
-              next hundred came from those neighbours&apos; referrals. Within
-              three years we had three treatment rooms, a real clinic on
-              Darling Street, and a waiting list of remote workers hauling
-              Atlassian-issued laptop bags up the stairs.
+              The business passed from Joe B. to his sons, then to his
+              grandsons, then to his great-grandsons — each generation training
+              the next, each generation keeping the same name on the door.
+              We&apos;ve moved the shop a few times (we&apos;re now at 292
+              Hermitage Avenue in East Nashville), upgraded the trucks from
+              wagons to vans, swapped lead and galvanized fittings for PEX
+              and copper, and added authorized warranty service for AO Smith,
+              Bradford White, State Industries, and Whirlpool — but the rest
+              of the operation has stayed remarkably consistent for 130+
+              years.
             </p>
             <p>
-              Today {siteConfig.shortName} runs eight treatment rooms, employs
-              eleven full-time clinicians (two registered chiropractors, seven
-              remedial massage therapists, two practice operations staff),
-              and serves Sydney from Hornsby down through the North Shore,
-              across the bridge to the Inner West, the CBD, and the Eastern
-              Suburbs. We&apos;re still family-owned. Marcus still treats
-              patients four days a week. The clinic is still on Darling
-              Street.
+              Today Frank Sullivan is the licensed master plumber on record,
+              and {siteConfig.shortName} serves Davidson and Williamson
+              counties — East Nashville and the urban core, Belle Meade and
+              Forest Hills, Green Hills and Hillsboro Village, Brentwood and
+              Franklin in Williamson. We do both commercial and residential,
+              with a particular specialty in commercial water heater and
+              boiler service. The phone still gets answered live, the trucks
+              still show up on time, and the name on the door is still
+              Sullivan.
             </p>
           </div>
         </div>
@@ -200,42 +203,43 @@ export default function AboutPage() {
           <div className="grid sm:grid-cols-2 gap-5">
             <div className="card-press p-6">
               <p className="text-xs text-copper-deep tracking-[0.2em] uppercase mb-2">
-                Registration
+                Master plumber
               </p>
               <p className="font-display text-lg text-ink">
                 {siteConfig.business.license}
               </p>
               <p className="text-xs text-ink-muted mt-2">
-                Verify on the AHPRA register and the AAMT member directory.
+                Verifiable at tn.gov/commerce/regboards/contractor.
               </p>
             </div>
             <div className="card-press p-6">
               <p className="text-xs text-copper-deep tracking-[0.2em] uppercase mb-2">
                 Insurance
               </p>
-              <p className="font-display text-2xl text-ink">$20M / $20M</p>
+              <p className="font-display text-2xl text-ink">$2M / $2M</p>
               <p className="text-xs text-ink-muted mt-2">
-                Public liability + professional indemnity. Certificates
-                available on request.
+                General liability + workers&apos; comp. Certificate of
+                insurance available on request.
               </p>
             </div>
             <div className="card-press p-6">
               <p className="text-xs text-copper-deep tracking-[0.2em] uppercase mb-2">
-                Registered chiropractors
+                Warranty service
               </p>
-              <p className="font-display text-2xl text-ink">2</p>
+              <p className="font-display text-2xl text-ink">4 brands</p>
               <p className="text-xs text-ink-muted mt-2">
-                Plus 7 AAMT-member remedial massage therapists on the team.
+                Authorized warranty for AO Smith, Bradford White, State
+                Industries, and Whirlpool water heaters.
               </p>
             </div>
             <div className="card-press p-6">
               <p className="text-xs text-copper-deep tracking-[0.2em] uppercase mb-2">
-                Health-fund rebates
+                Coverage area
               </p>
-              <p className="font-display text-2xl text-ink">HICAPS on-site</p>
+              <p className="font-display text-2xl text-ink">Davidson + Williamson</p>
               <p className="text-xs text-ink-muted mt-2">
-                Direct claim with Bupa, Medibank, HCF, NIB, and most major
-                Australian funds.
+                Residential and commercial plumbing service across the
+                Nashville metro and Williamson County.
               </p>
             </div>
           </div>
@@ -287,7 +291,7 @@ export default function AboutPage() {
       {/* CTA */}
       <section className="py-20 text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <p className="eyebrow mb-3">Talk to a clinician</p>
+          <p className="eyebrow mb-3">Talk to a plumber</p>
           <h2 className="font-display text-3xl lg:text-4xl text-ink mb-7 leading-tight">
             Pick up the phone.{" "}
             <span className="italic text-forest">We answer it.</span>
