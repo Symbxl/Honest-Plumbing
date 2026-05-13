@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 import { BreadcrumbSchema } from "@/components/Schema";
 import { LeadForm } from "@/components/LeadForm";
+import { BlogPreview } from "@/components/BlogPreview";
 
 export const metadata: Metadata = {
   title: "Contact Honest Plumbing",
@@ -222,6 +223,8 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      <BlogPreview />
     </>
   );
 }

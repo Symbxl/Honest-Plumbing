@@ -7,6 +7,7 @@ import { services } from "@/lib/services";
 import { siteConfig } from "@/lib/site-config";
 import { BreadcrumbSchema } from "@/components/Schema";
 import { LeadForm } from "@/components/LeadForm";
+import { BlogPreview } from "@/components/BlogPreview";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -241,6 +242,8 @@ export default async function AreaPage({ params }: PageProps) {
           </div>
         </section>
       </article>
+
+      <BlogPreview />
     </>
   );
 }

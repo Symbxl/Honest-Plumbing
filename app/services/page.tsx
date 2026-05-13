@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { services } from "@/lib/services";
 import { siteConfig } from "@/lib/site-config";
 import { BreadcrumbSchema } from "@/components/Schema";
+import { BlogPreview } from "@/components/BlogPreview";
 
 export const metadata: Metadata = {
   title: "Plumbing Services in Murfreesboro & Middle Tennessee",
@@ -67,6 +68,8 @@ export default function ServicesIndex() {
           </div>
         </div>
       </section>
+
+      <BlogPreview />
     </>
   );
 }

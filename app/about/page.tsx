@@ -5,6 +5,7 @@ import { siteConfig } from "@/lib/site-config";
 import { areas } from "@/lib/areas";
 import { services } from "@/lib/services";
 import { BreadcrumbSchema } from "@/components/Schema";
+import { BlogPreview } from "@/components/BlogPreview";
 
 export const metadata: Metadata = {
   title: "About Honest Plumbing",
@@ -307,6 +308,8 @@ export default function AboutPage() {
           </a>
         </div>
       </section>
+
+      <BlogPreview />
     </>
   );
 }

@@ -11,6 +11,7 @@ import {
   ArticleSchema,
 } from "@/components/Schema";
 import { LeadForm } from "@/components/LeadForm";
+import { BlogPreview } from "@/components/BlogPreview";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -284,6 +285,8 @@ export default async function BlogPostPage({ params }: PageProps) {
           </section>
         )}
       </article>
+
+      <BlogPreview />
     </>
   );
 }

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { areas } from "@/lib/areas";
 import { siteConfig } from "@/lib/site-config";
 import { BreadcrumbSchema } from "@/components/Schema";
+import { BlogPreview } from "@/components/BlogPreview";
 
 export const metadata: Metadata = {
   title: "Service Areas",
@@ -124,6 +125,8 @@ export default function AreasPage() {
           </a>
         </div>
       </section>
+
+      <BlogPreview />
     </>
   );
 }

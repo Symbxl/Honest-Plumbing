@@ -11,6 +11,7 @@ import {
   ServiceSchema,
 } from "@/components/Schema";
 import { LeadForm } from "@/components/LeadForm";
+import { BlogPreview } from "@/components/BlogPreview";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -207,6 +208,8 @@ export default async function ServicePage({ params }: PageProps) {
           </div>
         </section>
       </article>
+
+      <BlogPreview />
     </>
   );
 }

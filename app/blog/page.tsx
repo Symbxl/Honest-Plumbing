@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { blogPosts } from "@/lib/blogs";
 import { siteConfig } from "@/lib/site-config";
 import { BreadcrumbSchema } from "@/components/Schema";
+import { BlogPreview } from "@/components/BlogPreview";
 
 export const metadata: Metadata = {
   title: "Plumbing Guides & Insights",
@@ -191,6 +192,8 @@ export default function BlogIndexPage() {
           </a>
         </div>
       </section>
+
+      <BlogPreview />
     </>
   );
 }
