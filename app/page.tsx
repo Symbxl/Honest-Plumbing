@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 import { services } from "@/lib/services";
 import { areas } from "@/lib/areas";
-import { getRecentPosts } from "@/lib/blogs";
 import { LeadForm } from "@/components/LeadForm";
 
 export const metadata: Metadata = {
@@ -35,8 +34,6 @@ const testimonials = [
 ];
 
 export default function HomePage() {
-  const recentPosts = getRecentPosts(3);
-
   return (
     <>
       {/* ─────────── HERO ─────────── */}
@@ -111,7 +108,7 @@ export default function HomePage() {
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <div className="lg:col-span-5 order-2 lg:order-1">
-            <div className="relative aspect-[4/5] max-w-sm mx-auto lg:mx-0 overflow-hidden rounded-sm shadow-[0_8px_30px_-12px_rgba(30,58,138,0.35)]">
+            <div className="relative aspect-[4/5] max-w-sm mx-auto lg:mx-0 overflow-hidden rounded-sm shadow-[0_8px_30px_-12px_rgba(19,78,74,0.35)]">
               <Image
                 src="/images/owner-1.jpg"
                 alt="Aaron Kelly — Owner and Master Plumber at Honest Plumbing, Murfreesboro TN"
@@ -166,9 +163,9 @@ export default function HomePage() {
       </section>
 
       {/* ─────────── SERVICES ─────────── */}
-      <section className="bg-bone-100/60 border-y border-ink/10 py-24">
+      <section className="bg-bone-100/60 border-y border-ink/10 py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="max-w-2xl mb-14">
+          <div className="max-w-2xl mb-10">
             <p className="eyebrow mb-3">What we do</p>
             <h2 className="font-display text-4xl lg:text-5xl text-ink leading-tight">
               Full residential plumbing. Done right the first time.
@@ -180,28 +177,121 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {services.map((s, i) => (
               <Link
                 key={s.slug}
                 href={`/services/${s.slug}`}
-                className="group card-press p-7 hover:border-forest transition-all duration-300"
+                className="group card-press p-4 hover:border-forest transition-all duration-300"
                 style={{ animationDelay: `${i * 50}ms` }}
               >
-                <div className="text-copper-deep font-display text-3xl mb-4">
+                <div className="text-copper-deep font-display text-lg mb-1">
                   {String(i + 1).padStart(2, "0")}
                 </div>
-                <h3 className="font-display text-2xl text-ink mb-3 group-hover:text-forest transition-colors">
+                <h3 className="font-display text-base text-ink mb-1.5 group-hover:text-forest transition-colors">
                   {s.name}
                 </h3>
-                <p className="text-sm text-ink-muted leading-relaxed mb-5">
+                <p className="text-xs text-ink-muted leading-relaxed mb-3 line-clamp-3">
                   {s.hero}
                 </p>
-                <span className="text-sm font-semibold text-forest inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span className="text-xs font-semibold text-forest inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   Learn more
                   <span aria-hidden>→</span>
                 </span>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─────────── WHY GO TANKLESS ─────────── */}
+      <section className="py-20 border-b border-ink/10">
+        <div className="max-w-5xl mx-auto px-6 lg:px-12">
+          <div className="max-w-2xl mb-10">
+            <p className="eyebrow mb-3">Why go tankless?</p>
+            <h2 className="font-display text-4xl lg:text-5xl text-ink leading-tight">
+              Benefits of switching to a{" "}
+              <span className="italic text-forest">tankless water heater</span>{" "}
+              in your home.
+            </h2>
+          </div>
+
+          <ul className="grid sm:grid-cols-2 gap-4">
+            {[
+              "Unlimited hot water",
+              "Increased energy efficiency and savings",
+              "Double to triple the life expectancy compared to a tank style water heater",
+              "Space saving",
+            ].map((benefit) => (
+              <li
+                key={benefit}
+                className="card-press p-5 flex items-start gap-3"
+              >
+                <span
+                  aria-hidden
+                  className="shrink-0 mt-0.5 inline-flex items-center justify-center w-6 h-6 rounded-full bg-copper/20 text-copper-deep font-bold text-sm"
+                >
+                  ✓
+                </span>
+                <span className="text-ink-soft leading-snug">{benefit}</span>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-8">
+            <Link
+              href="/services/tankless-water-heaters"
+              className="inline-flex items-center gap-2 font-semibold text-forest hover:text-copper-deep transition-colors"
+            >
+              Learn more about tankless installs
+              <span aria-hidden>→</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ─────────── RECENT WORK ─────────── */}
+      <section className="bg-bone-100/60 border-y border-ink/10 py-24">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="max-w-2xl mb-12">
+            <p className="eyebrow mb-3">Recent work</p>
+            <h2 className="font-display text-4xl lg:text-5xl text-ink leading-tight">
+              Clean installs. Real{" "}
+              <span className="italic text-forest">Middle Tennessee homes.</span>
+            </h2>
+            <p className="text-ink-muted mt-4 max-w-xl">
+              A few snapshots from recent service calls and installs around
+              Murfreesboro — tankless water heaters, repipes, and fixture work.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              {
+                src: "/images/work-1.jpg",
+                alt: "Tankless water heater install by Honest Plumbing in Murfreesboro TN",
+              },
+              {
+                src: "/images/work-2.jpg",
+                alt: "Residential plumbing repair by Honest Plumbing in Middle Tennessee",
+              },
+              {
+                src: "/images/work-3.jpeg",
+                alt: "Clean plumbing install by master plumber Aaron Kelly",
+              },
+            ].map((img) => (
+              <div
+                key={img.src}
+                className="relative aspect-[4/5] overflow-hidden rounded-sm shadow-[0_8px_30px_-12px_rgba(19,78,74,0.25)]"
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw"
+                  className="object-cover hover:scale-[1.02] transition-transform duration-500"
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -283,63 +373,6 @@ export default function HomePage() {
                 </li>
               ))}
             </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* ─────────── BLOG PREVIEW ─────────── */}
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="flex items-end justify-between mb-12 flex-wrap gap-4">
-            <div className="max-w-2xl">
-              <p className="eyebrow mb-3">From the shop</p>
-              <h2 className="font-display text-4xl lg:text-5xl text-ink leading-tight">
-                Real plumbing answers from a Middle TN master plumber.
-              </h2>
-            </div>
-            <Link
-              href="/blog"
-              className="font-semibold text-forest hover:text-copper-deep transition-colors inline-flex items-center gap-2"
-            >
-              Read all posts
-              <span aria-hidden>→</span>
-            </Link>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {recentPosts.map((p) => (
-              <article
-                key={p.slug}
-                className="card-press p-7 flex flex-col h-full"
-              >
-                <div className="text-xs uppercase tracking-wider text-ink-muted mb-3">
-                  {new Date(p.publishedDate).toLocaleDateString("en-US", {
-                    month: "long",
-                    day: "numeric",
-                    year: "numeric",
-                  })}{" "}
-                  · {p.readTime} min read
-                </div>
-                <h3 className="font-display text-xl text-ink leading-snug mb-4">
-                  <Link
-                    href={`/blog/${p.slug}`}
-                    className="hover:text-forest transition-colors"
-                  >
-                    {p.title}
-                  </Link>
-                </h3>
-                <p className="text-sm text-ink-muted leading-relaxed mb-5 flex-1">
-                  {p.excerpt}
-                </p>
-                <Link
-                  href={`/blog/${p.slug}`}
-                  className="text-sm font-semibold text-forest inline-flex items-center gap-1 hover:gap-2 transition-all"
-                >
-                  Read more
-                  <span aria-hidden>→</span>
-                </Link>
-              </article>
-            ))}
           </div>
         </div>
       </section>

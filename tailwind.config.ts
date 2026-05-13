@@ -11,8 +11,8 @@ const config: Config = {
       colors: {
         bone: {
           50: "#ffffff",
-          100: "#f1f7fd",
-          200: "#e0edfb",
+          100: "#f0fdfa",
+          200: "#ccfbf1",
         },
         ink: {
           DEFAULT: "#1a1a1a",
@@ -20,14 +20,14 @@ const config: Config = {
           muted: "#5a5a5a",
         },
         forest: {
-          DEFAULT: "#1e3a8a",
-          deep: "#172554",
-          light: "#1e40af",
+          DEFAULT: "#134e4a",
+          deep: "#042f2e",
+          light: "#115e59",
         },
         copper: {
-          DEFAULT: "#60a5fa",
-          light: "#93c5fd",
-          deep: "#2563eb",
+          DEFAULT: "#2dd4bf",
+          light: "#5eead4",
+          deep: "#0d9488",
         },
       },
       fontFamily: {

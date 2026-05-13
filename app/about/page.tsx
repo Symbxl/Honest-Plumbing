@@ -120,7 +120,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="grid md:grid-cols-12 gap-10 md:gap-14 mb-12 items-start">
             <div className="md:col-span-5">
-              <div className="relative aspect-[4/5] overflow-hidden rounded-sm shadow-[0_8px_30px_-12px_rgba(30,58,138,0.35)]">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-sm shadow-[0_8px_30px_-12px_rgba(19,78,74,0.35)]">
                 <Image
                   src="/images/owner-2.jpg"
                   alt="Aaron Kelly — Owner and Master Plumber at Honest Plumbing"

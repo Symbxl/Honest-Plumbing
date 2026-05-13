@@ -44,7 +44,7 @@ export function LeadForm({ defaultService }: LeadFormProps) {
           role="status"
           aria-live="polite"
         >
-          <div className="absolute inset-x-0 top-0 h-[5px] bg-[#1a73e8]" />
+          <div className="absolute inset-x-0 top-0 h-[5px] bg-[#14b8a6]" />
           <div className="text-4xl mb-3" aria-hidden>
             ✓
           </div>
@@ -75,7 +75,7 @@ export function LeadForm({ defaultService }: LeadFormProps) {
         className="card-press relative overflow-hidden rounded-lg p-7 sm:p-8 space-y-4"
         noValidate
       >
-        <div className="absolute inset-x-0 top-0 h-[5px] bg-[#1a73e8]" />
+        <div className="absolute inset-x-0 top-0 h-[5px] bg-[#14b8a6]" />
 
         <h3 className="text-2xl sm:text-3xl font-semibold text-ink text-center uppercase pt-2 pb-2 tracking-[0.12em]">
           Get a Free Quote

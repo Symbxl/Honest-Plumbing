@@ -4,14 +4,14 @@
 
 :root {
   --bg: #ffffff;
-  --bg-deep: #f1f7fd;
+  --bg-deep: #f0fdfa;
   --ink: #1a1a1a;
   --ink-soft: #2c2c2c;
   --ink-muted: #5a5a5a;
-  --forest: #1e3a8a;
-  --forest-deep: #172554;
-  --copper: #60a5fa;
-  --copper-deep: #2563eb;
+  --forest: #134e4a;
+  --forest-deep: #042f2e;
+  --copper: #2dd4bf;
+  --copper-deep: #0d9488;
   --rule: rgba(26, 26, 26, 0.12);
 }
 
@@ -89,7 +89,7 @@ h3,
   border: 1px solid var(--rule);
   box-shadow:
     0 1px 0 0 rgba(26, 26, 26, 0.04),
-    0 4px 14px -8px rgba(30, 58, 138, 0.08);
+    0 4px 14px -8px rgba(19, 78, 74, 0.08);
 }
 
 /* Buttons */
@@ -106,7 +106,7 @@ h3,
 .btn-primary:hover {
   background: var(--forest-deep);
   transform: translateY(-1px);
-  box-shadow: 0 4px 14px -4px rgba(30, 58, 138, 0.4);
+  box-shadow: 0 4px 14px -4px rgba(19, 78, 74, 0.4);
 }
 
 .btn-secondary {
@@ -137,14 +137,14 @@ h3,
   background: var(--copper-deep);
   color: var(--bg);
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px -4px rgba(37, 99, 235, 0.4);
+  box-shadow: 0 6px 16px -4px rgba(13, 148, 136, 0.4);
 }
 
 /* Vivid orange CTA used on the quote form */
 .btn-quote {
   display: flex;
   align-items: center;
-  background: #3b82f6;
+  background: #14b8a6;
   color: #fff;
   font-weight: 700;
   font-size: 1.05rem;
@@ -152,12 +152,12 @@ h3,
   padding: 1.05rem 1.75rem;
   border-radius: 6px;
   transition: all 200ms cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 1px 0 0 #1d4ed8;
+  box-shadow: 0 1px 0 0 #0f766e;
 }
 .btn-quote:hover {
-  background: #2563eb;
+  background: #0d9488;
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px -4px rgba(37, 99, 235, 0.45);
+  box-shadow: 0 6px 16px -4px rgba(13, 148, 136, 0.45);
 }
 
 /* Form inputs */
@@ -175,7 +175,7 @@ h3,
 .input-field:focus {
   outline: none;
   border-color: var(--forest);
-  box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.12);
+  box-shadow: 0 0 0 3px rgba(19, 78, 74, 0.12);
   background: #fff;
 }
 .input-field::placeholder {
