@@ -241,7 +241,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             <p className="eyebrow mb-3 text-center">Ready to schedule?</p>
             <h2 className="font-display text-3xl text-ink mb-7 leading-tight text-center">
               Get a <span className="italic text-forest">flat-price quote</span>{" "}
-              from a licensed Nashville plumber.
+              from a licensed Middle Tennessee plumber.
             </h2>
             <LeadForm />
           </div>

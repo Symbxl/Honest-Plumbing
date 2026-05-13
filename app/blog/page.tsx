@@ -5,14 +5,14 @@ import { siteConfig } from "@/lib/site-config";
 import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata: Metadata = {
-  title: "Insights & Plumbing Guides",
+  title: "Plumbing Guides & Insights",
   description:
-    "Real, detailed Nashville plumbing guides from working master plumbers. Service pricing, what to expect, and honest answers about repair vs. replace. No fluff.",
+    "Detailed Middle Tennessee plumbing guides from a working master plumber. Service pricing, what to expect, and honest answers about repair vs. replace. No fluff.",
   alternates: { canonical: `${siteConfig.url}/blog` },
   openGraph: {
-    title: "Plumbing Insights | Joe B. Sullivan & Sons Nashville",
+    title: "Plumbing Insights | Honest Plumbing — Murfreesboro TN",
     description:
-      "Detailed Nashville plumbing guides — pricing, common problems, and how to choose a licensed plumber.",
+      "Detailed Middle Tennessee plumbing guides — pricing, common problems, and how to choose a licensed plumber.",
     url: `${siteConfig.url}/blog`,
   },
 };
@@ -63,13 +63,11 @@ export default function BlogIndexPage() {
               who actually do the work.
             </h1>
             <p className="text-lg text-ink-muted leading-relaxed">
-              Every guide on this page is written by a Joe B. Sullivan & Sons
-              plumber based on real Nashville jobs — real installed pricing,
-              real diagnostic reasoning, real Nashville-area conditions. We
-              update the numbers when they change. No SEO filler, no
-              &quot;ultimate guide&quot; nonsense, no affiliate-link traps.
-              Just useful answers to the questions our customers actually ask
-              us.
+              Every guide on this page is written based on real Middle
+              Tennessee jobs — real diagnostic reasoning, real local
+              conditions, and the kinds of answers our customers actually
+              ask us. No SEO filler, no &quot;ultimate guide&quot; nonsense.
+              Just useful information from a working master plumber.
             </p>
           </div>
         </div>
@@ -132,7 +130,7 @@ export default function BlogIndexPage() {
       {/* OTHER POSTS */}
       <section className="py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <p className="eyebrow mb-6">More from the Sullivan shop</p>
+          <p className="eyebrow mb-6">More from the shop</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {rest.map((post, idx) => (
               <Link
@@ -177,7 +175,7 @@ export default function BlogIndexPage() {
         <div className="max-w-3xl mx-auto px-6 text-center">
           <p className="eyebrow mb-3">Have a question we haven&apos;t covered?</p>
           <h2 className="font-display text-3xl text-ink mb-5 leading-tight">
-            Ask a Sullivan plumber directly.
+            Ask a master plumber directly.
           </h2>
           <p className="text-ink-muted leading-relaxed mb-7">
             Phone questions are free, even if you&apos;re not ready to schedule.

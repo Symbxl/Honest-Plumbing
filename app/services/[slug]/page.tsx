@@ -101,7 +101,7 @@ export default async function ServicePage({ params }: PageProps) {
               <p className="eyebrow mb-4">Service</p>
               <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.05] text-ink mb-6">
                 {service.name}{" "}
-                <span className="italic text-forest">in Nashville</span>
+                <span className="italic text-forest">in Middle Tennessee</span>
               </h1>
               <p className="font-display italic text-2xl text-ink-soft mb-7">
                 {service.hero}
@@ -136,7 +136,7 @@ export default async function ServicePage({ params }: PageProps) {
           <div className="max-w-3xl mx-auto px-6">
             <p className="eyebrow mb-3">Common questions</p>
             <h2 className="font-display text-3xl lg:text-4xl text-ink mb-10 leading-tight">
-              Frequently asked about {service.shortName.toLowerCase()} in Nashville.
+              Frequently asked about {service.shortName.toLowerCase()} in Middle Tennessee.
             </h2>
             <dl className="space-y-6">
               {service.faqs.map((f) => (
@@ -159,7 +159,7 @@ export default async function ServicePage({ params }: PageProps) {
               <p className="eyebrow mb-3">Service areas</p>
               <h2 className="font-display text-3xl lg:text-4xl text-ink leading-tight">
                 We provide {service.shortName.toLowerCase()} across these
-                Nashville-area neighborhoods:
+                Middle Tennessee areas:
               </h2>
             </div>
             <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
@@ -185,7 +185,7 @@ export default async function ServicePage({ params }: PageProps) {
           <div className="max-w-4xl mx-auto px-6 text-center">
             <p className="eyebrow text-copper-light mb-3">Schedule this week</p>
             <h2 className="font-display text-3xl lg:text-4xl mb-6 leading-tight">
-              Need {service.shortName.toLowerCase()} in Nashville?
+              Need {service.shortName.toLowerCase()} in Middle Tennessee?
               <br />
               <span className="italic">Most service calls are scheduled same-day or next-day.</span>
             </h2>

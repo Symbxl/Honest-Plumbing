@@ -156,7 +156,7 @@ export default async function AreaPage({ params }: PageProps) {
             <div className="max-w-2xl mb-10">
               <p className="eyebrow mb-3">Services available</p>
               <h2 className="font-display text-3xl lg:text-4xl text-ink leading-tight">
-                Every Sullivan service is available to {area.name} customers.
+                Every Honest Plumbing service is available to {area.name} customers.
               </h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">

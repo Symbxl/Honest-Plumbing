@@ -6,14 +6,14 @@ import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata: Metadata = {
   title: "Service Areas",
-  description: `Joe B. Sullivan & Sons Plumbing serves ${areas
+  description: `Honest Plumbing serves ${areas
     .map((a) => a.name)
-    .join(", ")} and the wider Nashville metro. Same-day service in most cases, licensed master plumber on every job.`,
+    .join(", ")} and the surrounding Middle Tennessee area. Same-day service in most cases, licensed master plumber on every job.`,
   alternates: { canonical: `${siteConfig.url}/areas` },
   openGraph: {
-    title: "Nashville Plumbing Service Areas | Joe B. Sullivan & Sons",
+    title: "Middle Tennessee Plumbing Service Areas | Honest Plumbing",
     description:
-      "Nashville plumber serving East Nashville, downtown, Green Hills, Belle Meade, Brentwood, and Franklin.",
+      "Murfreesboro plumber serving Smyrna, La Vergne, Nolensville, Brentwood, Franklin, and the rest of Middle Tennessee.",
     url: `${siteConfig.url}/areas`,
   },
 };
@@ -47,20 +47,16 @@ export default function AreasPage() {
             <p className="eyebrow mb-4">Where we work</p>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.05] text-ink mb-6">
               Plumbing across{" "}
-              <span className="italic text-forest">Nashville</span> — East side
-              to{" "}
+              <span className="italic text-forest">Middle Tennessee</span> —
+              Murfreesboro to{" "}
               <span className="italic text-forest">Williamson County.</span>
             </h1>
             <p className="text-lg text-ink-muted leading-relaxed">
-              Joe B. Sullivan & Sons has been a Nashville local since 1895 —
-              our shop has been here longer than most of the buildings we
-              service. We know which neighborhoods still have clay sewer
-              laterals at the end of their service life, which 1920s bungalows
-              are running on galvanized supply lines, and which Brentwood
-              subdivisions have undersized gas lines for tankless conversions.
-              Local knowledge isn&apos;t a marketing line — it&apos;s why we
-              diagnose faster and quote more accurately than the national
-              chains.
+              Honest Plumbing is based in Murfreesboro and serves homes across
+              Rutherford, Williamson, and the surrounding counties. We know
+              the older Middle Tennessee housing stock and the newer
+              subdivisions equally well — local plumber, local knowledge,
+              clean work, and honest consultation on every visit.
             </p>
           </div>
         </div>
@@ -113,10 +109,10 @@ export default function AreasPage() {
             We probably still cover you.
           </h2>
           <p className="text-ink-muted leading-relaxed mb-7">
-            We regularly serve Inglewood, Madison, Hermitage, Donelson, Hillsboro
-            Village, Belmont, 12 South, The Nations, Sylvan Park, Bellevue,
-            Forest Hills, Oak Hill, Berry Hill, Antioch, and Nolensville. Give
-            us a call and we&apos;ll tell you straight whether we&apos;re the
+            We also regularly serve Eagleville, Christiana, Lascassas,
+            Walter Hill, Rockvale, Spring Hill, Thompson&apos;s Station,
+            Antioch, and surrounding Middle Tennessee communities. Give us
+            a call and we&apos;ll tell you straight whether we&apos;re the
             right fit or whether someone closer would serve you better.
           </p>
           <a

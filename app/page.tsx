@@ -16,21 +16,21 @@ export const metadata: Metadata = {
 const testimonials = [
   {
     quote:
-      "Very knowledgeable — especially with old style parts — and always very nice. They get the job done!",
-    name: "John T.",
-    location: "East Nashville",
+      "Aaron did a very good job. Very friendly, experienced, knowledgeable and professional. Would definitely use Honest Plumbing again!",
+    name: "Verified Customer",
+    location: "Angi Review",
   },
   {
     quote:
-      "Fair and honest, and that's what matters. You are top notch! Three other Nashville plumbers told us our 1940s water heater closet wasn't fixable. Sullivan had it sorted the same afternoon.",
-    name: "Marco C.",
-    location: "Belle Meade",
+      "Honest pricing and honest advice. Aaron told us the repair was the right call instead of pushing a full replacement. The hot water has been perfect since.",
+    name: "Murfreesboro Homeowner",
+    location: "Murfreesboro",
   },
   {
     quote:
-      "Sullivan Plumbing came out on a holiday to repair my water heater. Quick, reliable, and didn't try to upsell us on a tankless we didn't need.",
-    name: "Steven G.",
-    location: "Green Hills",
+      "Tankless install was clean, on time, and exactly what was quoted — no surprise add-ons. We finally have unlimited hot water for the whole family.",
+    name: "Smyrna Homeowner",
+    location: "Smyrna",
   },
 ];
 
@@ -41,7 +41,7 @@ export default function HomePage() {
     <>
       {/* ─────────── HERO ─────────── */}
       <section className="relative overflow-hidden">
-        {/* decorative copper arc */}
+        {/* decorative arcs */}
         <div
           aria-hidden
           className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full opacity-[0.08] bg-copper blur-3xl pointer-events-none"
@@ -53,19 +53,20 @@ export default function HomePage() {
 
         <div className="max-w-7xl mx-auto px-6 lg:px-12 pt-16 lg:pt-24 pb-20 grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           <div className="lg:col-span-7 animate-fade-up">
+            <p className="eyebrow mb-4">Murfreesboro · Middle Tennessee</p>
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl leading-[0.95] text-ink mb-7">
-              Honest, reliable{" "}
+              Honest, licensed{" "}
               <span className="brush-underline italic text-forest">
-                Nashville plumbing
+                Middle Tennessee plumbing
               </span>{" "}
-              since 1895.
+              you can trust.
             </h1>
 
             <p className="text-lg text-ink-muted max-w-xl leading-relaxed mb-9">
-              Family-owned commercial and residential plumbing — five
-              generations of Nashville master plumbers. Water heaters, boilers,
-              drains, sewer lines, and gas service. Authorized warranty for AO
-              Smith, Bradford White, State Industries, and Whirlpool.
+              Residential plumbing in Murfreesboro and the surrounding Middle
+              Tennessee area. Owned by master plumber Aaron Kelly, with over a
+              decade of service-call experience — fair pricing, honest
+              consultation, and clean work every visit.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-12">
@@ -81,6 +82,19 @@ export default function HomePage() {
               </Link>
             </div>
 
+            <div className="flex flex-wrap items-center gap-4">
+              <Image
+                src="/images/expertise-badge.png"
+                alt="Expertise.com Best Plumbers in Murfreesboro badge"
+                width={120}
+                height={96}
+                className="h-20 w-auto"
+              />
+              <div className="text-sm text-ink-muted leading-snug">
+                <p className="font-semibold text-ink">Recognized by Expertise.com</p>
+                <p>Best Plumbers in Murfreesboro · Licensed, Bonded & Insured</p>
+              </div>
+            </div>
           </div>
 
           {/* Hero form */}
@@ -90,65 +104,61 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─────────── HISTORY ─────────── */}
+      {/* ─────────── ABOUT / OWNER ─────────── */}
       <section
         id="history"
         className="scroll-mt-20 py-24 border-y border-ink/10"
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <div className="lg:col-span-5 order-2 lg:order-1">
-            <div className="relative aspect-[5/6] max-w-sm mx-auto lg:mx-0 overflow-hidden rounded-sm shadow-[0_8px_30px_-12px_rgba(30,58,138,0.35)]">
+            <div className="relative aspect-[4/5] max-w-sm mx-auto lg:mx-0 overflow-hidden rounded-sm shadow-[0_8px_30px_-12px_rgba(30,58,138,0.35)]">
               <Image
-                src="https://static.wixstatic.com/media/dfd6ea_bad44d2ba479b1cfe00b492ee345a6d0.jpg"
-                alt="Paul and Joe Sullivan — Joe B. Sullivan & Sons Plumbing, Nashville"
+                src="/images/owner-1.jpg"
+                alt="Aaron Kelly — Owner and Master Plumber at Honest Plumbing, Murfreesboro TN"
                 fill
                 sizes="(min-width: 1024px) 380px, (min-width: 640px) 360px, 90vw"
                 className="object-cover"
               />
             </div>
             <p className="mt-4 text-center lg:text-left text-xs uppercase tracking-[0.2em] text-ink-muted">
-              Pictured: Paul and Joe Sullivan
+              Pictured: Aaron Kelly · Owner & Master Plumber
             </p>
           </div>
 
           <div className="lg:col-span-7 order-1 lg:order-2">
-            <p className="eyebrow mb-3">Our history</p>
+            <p className="eyebrow mb-3">Who we are</p>
             <h2 className="font-display text-4xl lg:text-5xl text-ink leading-tight mb-6">
-              Honest and reliable plumbing —{" "}
-              <span className="italic text-forest">your family&apos;s
-              plumber since 1895.</span>
+              Honest service from a local{" "}
+              <span className="italic text-forest">licensed master plumber.</span>
             </h2>
             <div className="space-y-5 text-ink-muted leading-relaxed max-w-2xl">
               <p>
-                Joe B. Sullivan founded the company in 1895, when Nashville
-                was still a city of about 80,000 people and indoor plumbing
-                was a luxury most homes were just beginning to add. Joe B.
-                ran his calls out of a downtown shop with a horse-drawn
-                wagon to haul fixtures and parts.
+                I&apos;ve been running residential service calls for over ten
+                years across Middle Tennessee — always fair in pricing,
+                honest in consultation, and committed to doing the job right
+                the first time. Honest Plumbing is built around that simple
+                idea.
               </p>
               <p>
-                The business passed from Joe B. to his sons, then to his
-                grandsons, then to his great-grandsons — five generations
-                of Sullivans, each one training the next, each one keeping
-                the same name on the door. We&apos;ve moved the shop a few
-                times (we&apos;re now at 292 Hermitage Avenue in East
-                Nashville), upgraded the trucks from wagons to vans, and
-                swapped lead and galvanized fittings for PEX and copper.
-                The rest of the operation has stayed remarkably consistent
-                for 130 years.
+                We&apos;re a small, licensed and insured operation based in
+                Murfreesboro. Tennessee Master Plumber license #4034. Every
+                job is supervised and completed by a licensed plumber — not
+                handed off to an apprentice running solo.
               </p>
               <p>
-                Today Frank Sullivan is the licensed master plumber on
-                record. The phone still gets answered live, the trucks
-                still show up on time, and the name on the door is still
-                Sullivan.
+                Service you can trust starts with telling you the truth about
+                what your plumbing actually needs. If a repair will save you
+                money over a full replacement, we&apos;ll tell you. If a
+                cheaper fixture will fail in two years, we&apos;ll tell you.
+                That&apos;s the whole business model.
               </p>
+              <p className="font-semibold text-ink">— Aaron Kelly, Owner</p>
             </div>
             <Link
               href="/about"
               className="inline-flex items-center gap-2 mt-8 font-semibold text-forest hover:text-copper-deep transition-colors"
             >
-              Read the full story
+              More about Honest Plumbing
               <span aria-hidden>→</span>
             </Link>
           </div>
@@ -161,13 +171,12 @@ export default function HomePage() {
           <div className="max-w-2xl mb-14">
             <p className="eyebrow mb-3">What we do</p>
             <h2 className="font-display text-4xl lg:text-5xl text-ink leading-tight">
-              Six services. Done right the first time.
+              Full residential plumbing. Done right the first time.
             </h2>
             <p className="text-ink-muted mt-4 max-w-xl">
-              Five generations of Nashville master plumbers means we&apos;ve
-              seen what your house has — heritage pipe, obsolete parts,
-              warranty-eligible water heaters, and the kind of old-building
-              problems most plumbers won&apos;t touch.
+              From tankless water heaters and full repipes to drain calls and
+              new bathroom fixtures — we cover the residential plumbing needs
+              of homes across Murfreesboro and Middle Tennessee.
             </p>
           </div>
 
@@ -180,7 +189,7 @@ export default function HomePage() {
                 style={{ animationDelay: `${i * 50}ms` }}
               >
                 <div className="text-copper-deep font-display text-3xl mb-4">
-                  0{i + 1}
+                  {String(i + 1).padStart(2, "0")}
                 </div>
                 <h3 className="font-display text-2xl text-ink mb-3 group-hover:text-forest transition-colors">
                   {s.name}
@@ -202,7 +211,7 @@ export default function HomePage() {
       <section id="reviews" className="py-24 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="max-w-2xl mb-14">
-            <p className="eyebrow mb-3">What patients say</p>
+            <p className="eyebrow mb-3">What customers say</p>
             <h2 className="font-display text-4xl lg:text-5xl text-ink leading-tight">
               The reviews speak for themselves.
             </h2>
@@ -242,14 +251,13 @@ export default function HomePage() {
             <div className="lg:col-span-5">
               <p className="eyebrow text-copper-light mb-3">Where we work</p>
               <h2 className="font-display text-4xl lg:text-5xl leading-tight mb-6">
-                Nashville locals. Five generations.
+                Local to Murfreesboro. Serving Middle Tennessee.
               </h2>
               <p className="text-bone-50/80 leading-relaxed mb-8">
-                Our shop is at 292 Hermitage Avenue in East Nashville. We
-                service Davidson and Williamson counties — East Nashville,
-                downtown, Green Hills, Belle Meade, Brentwood, and Franklin
-                are our steadiest service areas, but we cover the entire
-                Nashville metro.
+                Honest Plumbing is based in Murfreesboro and we serve homes
+                across Rutherford County and the surrounding Middle Tennessee
+                area — Smyrna, La Vergne, Nolensville, Brentwood, and
+                Franklin are regular service stops.
               </p>
               <Link
                 href="/areas"
@@ -284,9 +292,9 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex items-end justify-between mb-12 flex-wrap gap-4">
             <div className="max-w-2xl">
-              <p className="eyebrow mb-3">From the clinic</p>
+              <p className="eyebrow mb-3">From the shop</p>
               <h2 className="font-display text-4xl lg:text-5xl text-ink leading-tight">
-                Real plumbing answers, written by Nashville plumbers.
+                Real plumbing answers from a Middle TN master plumber.
               </h2>
             </div>
             <Link
@@ -346,9 +354,9 @@ export default function HomePage() {
             <span className="italic text-forest">We&apos;ll handle it.</span>
           </h2>
           <p className="text-ink-muted mb-9 max-w-xl mx-auto">
-            We answer the phone live during business hours. Most service calls
-            are scheduled same-day or next-day. Flat-price quotes — no surprise
-            mid-job add-ons, no packages you don&apos;t need.
+            Live answer during business hours. Most service calls are
+            scheduled same-day or next-day. Flat-price quotes — no surprise
+            add-ons.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a

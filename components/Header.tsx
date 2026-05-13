@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 
@@ -8,8 +9,16 @@ export function Header() {
         <Link
           href="/"
           className="font-display text-xl tracking-tight text-forest flex items-center gap-2"
+          aria-label={`${siteConfig.shortName} home`}
         >
-          <span aria-hidden className="inline-block w-2 h-2 rounded-full bg-copper-deep" />
+          <Image
+            src="/images/logo.png"
+            alt=""
+            width={36}
+            height={36}
+            className="h-9 w-9"
+            priority
+          />
           <span>{siteConfig.shortName}</span>
         </Link>
 
@@ -23,11 +32,14 @@ export function Header() {
           <Link href="/services" className="hover:text-forest transition-colors">
             Services
           </Link>
+          <Link href="/areas" className="hover:text-forest transition-colors">
+            Service Areas
+          </Link>
           <Link href="/#reviews" className="hover:text-forest transition-colors">
             Reviews
           </Link>
-          <Link href="/#history" className="hover:text-forest transition-colors">
-            History
+          <Link href="/about" className="hover:text-forest transition-colors">
+            About
           </Link>
           <Link href="/contact" className="hover:text-forest transition-colors">
             Contact

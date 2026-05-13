@@ -5,12 +5,12 @@ import { BreadcrumbSchema } from "@/components/Schema";
 import { LeadForm } from "@/components/LeadForm";
 
 export const metadata: Metadata = {
-  title: "Contact Joe B. Sullivan & Sons Plumbing",
-  description: `Call ${siteConfig.business.phoneDisplay} or send a message — Joe B. Sullivan & Sons Plumbing at 292 Hermitage Avenue, Nashville. Same-day service in most cases, licensed master plumber on every job.`,
+  title: "Contact Honest Plumbing",
+  description: `Call ${siteConfig.business.phoneDisplay} or send a message — Honest Plumbing in Murfreesboro, TN. Same-day service in most cases, licensed master plumber on every job.`,
   alternates: { canonical: `${siteConfig.url}/contact` },
   openGraph: {
-    title: `Contact ${siteConfig.shortName} | Nashville Plumbing Since 1895`,
-    description: `Reach Joe B. Sullivan & Sons Plumbing. Phone, email, address, and online quote request.`,
+    title: `Contact ${siteConfig.shortName} | Murfreesboro & Middle Tennessee`,
+    description: `Reach Honest Plumbing. Phone, email, and online quote request.`,
     url: `${siteConfig.url}/contact`,
   },
 };
@@ -68,9 +68,9 @@ export default function ContactPage() {
               <span className="italic text-forest">a phone call.</span>
             </h1>
             <p className="text-lg text-ink-muted leading-relaxed">
-              We answer the phone live during business hours. Use the form if
-              you prefer — we reply within an hour during the day, by 9 AM the
-              next business day if you write after hours.
+              We answer the phone during business hours. Use the form if you
+              prefer — we reply quickly during the day and by the next
+              business morning if you write after hours.
             </p>
           </div>
         </div>
@@ -91,9 +91,9 @@ export default function ContactPage() {
                 {business.phoneDisplay}
               </a>
               <p className="text-sm text-ink-muted mt-3 leading-relaxed">
-                Live answer during business hours, no phone tree. After-hours
-                emergencies reach the on-call plumber via our main number and
-                voice prompts.
+                Best way to reach us during business hours. After-hours calls
+                roll to voicemail and we return them first thing the next
+                business day.
               </p>
             </div>
 
@@ -107,35 +107,32 @@ export default function ContactPage() {
                 {business.email}
               </a>
               <p className="text-sm text-ink-muted mt-3 leading-relaxed">
-                Best for quote requests, scheduling non-emergency work, or
-                asking about warranty service on a unit we installed.
+                Good for quote requests and scheduling non-emergency work.
+                For anything urgent, please call.
               </p>
             </div>
 
-            {/* ADDRESS */}
+            {/* SERVICE AREA */}
             <div>
-              <p className="eyebrow mb-3">Shop address</p>
+              <p className="eyebrow mb-3">Service area</p>
               <address className="font-display text-2xl text-ink not-italic leading-tight">
-                {business.address.street}
+                Murfreesboro, TN
                 <br />
-                {business.address.city}, {business.address.region}{" "}
-                {business.address.postalCode}
+                Middle Tennessee
               </address>
               <p className="text-sm text-ink-muted mt-3 leading-relaxed">
-                Our shop in East Nashville is open during business hours for
-                pickups, warranty drop-offs, and quote consults. Most service
-                calls go directly to your address — we&apos;ll dispatch the
-                truck rather than ask you to come in.
+                Based in Murfreesboro, serving Rutherford, Williamson, and
+                surrounding counties — Smyrna, La Vergne, Nolensville,
+                Brentwood, Franklin, and the rest of the Middle Tennessee
+                area.
               </p>
               <a
-                href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
-                  `${business.address.street}, ${business.address.city}, ${business.address.region} ${business.address.postalCode}`
-                )}`}
+                href={siteConfig.social.google}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-forest hover:text-copper-deep transition-colors"
               >
-                Get directions
+                Find us on Google Maps
                 <span aria-hidden>→</span>
               </a>
             </div>
@@ -163,8 +160,7 @@ export default function ContactPage() {
                 ))}
               </dl>
               <p className="text-xs text-ink-muted mt-3">
-                Closed Saturdays and Sundays. After-hours emergency plumbing
-                line answered through our main number.
+                Closed Saturdays and Sundays.
               </p>
             </div>
 
@@ -177,8 +173,7 @@ export default function ContactPage() {
                 {business.license}
               </p>
               <p className="text-xs text-ink-muted mt-1">
-                Bonded · Insured · {business.priceRange} · Family-owned
-                Nashville plumber since {business.foundingYear}
+                Locally owned · Murfreesboro, Tennessee · Service you can trust
               </p>
             </div>
           </div>
@@ -209,7 +204,7 @@ export default function ContactPage() {
           <div className="max-w-4xl mx-auto px-6 text-center relative">
             <p className="eyebrow text-copper-light mb-3">Serving</p>
             <p className="font-display text-2xl lg:text-3xl leading-snug">
-              East Nashville · Downtown · Green Hills · Belle Meade · Brentwood · Franklin
+              Murfreesboro · Smyrna · La Vergne · Nolensville · Brentwood · Franklin
             </p>
             <p className="text-bone-100/70 mt-4 text-sm">
               {business.geo.latitude.toFixed(4)}° N,{" "}

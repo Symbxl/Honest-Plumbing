@@ -1,4 +1,4 @@
-// File: /Users/symbol/Desktop/converting/app/areas/[slug]/page.tsx
+// File: /Users/symbol/Desktop/converting copy/app/areas/[slug]/page.tsx
 import * as entry from '../../../../../app/areas/[slug]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

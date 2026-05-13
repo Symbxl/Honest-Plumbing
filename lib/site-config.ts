@@ -6,62 +6,69 @@
 
 export const siteConfig = {
   // ---- Brand ----
-  name: "Joe B. Sullivan & Sons Plumbing",
-  shortName: "Joe B. Sullivan & Sons",
-  tagline: "Honest and Reliable Plumbing Since 1895",
+  name: "Honest Plumbing",
+  shortName: "Honest Plumbing",
+  tagline: "Service You Can Trust",
   description:
-    "Family-owned commercial and residential plumbing in Nashville since 1895. Water heaters, boilers, drain cleaning, sewer & water line replacement, backflow, and gas lines. Warranty service for AO Smith, Bradford White, State Industries, and Whirlpool.",
+    "Honest, licensed residential plumbing in Murfreesboro and across Middle Tennessee. Tankless and tank water heaters, sewer and drain service, water filtration, kitchen and bath plumbing, and full water and sewer repipes. Owned by master plumber Aaron Kelly — fair pricing, honest consultation, and clean work every visit.",
 
   // ---- Domain (no trailing slash) ----
   // Used for canonical URLs, sitemap, Open Graph, JSON-LD.
-  url: "https://www.joebsullivanandsons.com",
+  url: "https://www.honestplumbingtn.com",
 
   // ---- NAP (Name, Address, Phone) — critical for local SEO ----
   business: {
-    legalName: "Joe B. Sullivan & Sons Plumbing Co., Inc.",
-    phone: "+1-615-254-8379",
-    phoneDisplay: "(615) 254-8379",
-    email: "info@joebsullivanandsons.com",
+    legalName: "Honest Plumbing",
+    phone: "+1-615-962-7007",
+    phoneDisplay: "(615) 962-7007",
+    email: "honestplumbingtn@gmail.com",
     address: {
-      street: "292 Hermitage Ave",
-      city: "Nashville",
+      street: "",
+      city: "Murfreesboro",
       region: "TN",
-      postalCode: "37210",
+      postalCode: "37130",
       country: "US",
     },
     geo: {
-      latitude: 36.1561,
-      longitude: -86.7707,
+      latitude: 35.8628845,
+      longitude: -86.5142059,
     },
     hours: [
-      { day: "Mon", open: "08:00", close: "16:30" },
-      { day: "Tue", open: "08:00", close: "16:30" },
-      { day: "Wed", open: "08:00", close: "16:30" },
-      { day: "Thu", open: "08:00", close: "16:30" },
-      { day: "Fri", open: "08:00", close: "16:30" },
+      { day: "Mon", open: "08:00", close: "17:00" },
+      { day: "Tue", open: "08:00", close: "17:00" },
+      { day: "Wed", open: "08:00", close: "17:00" },
+      { day: "Thu", open: "08:00", close: "17:00" },
+      { day: "Fri", open: "08:00", close: "17:00" },
       { day: "Sat", closed: true },
       { day: "Sun", closed: true },
     ],
     priceRange: "$$",
-    foundingYear: 1895,
-    license: "Licensed Master Plumber: Frank Sullivan · Licensed, Bonded & Insured",
-    rating: { value: 4.9, count: 187 },
+    foundingYear: 2013,
+    license: "Tennessee Master Plumber: Aaron Kelly · License #4034 · Licensed, Bonded & Insured",
+    rating: { value: 5.0, count: 42 },
+    owner: "Aaron Kelly",
+    ownerRole: "Owner & Master Plumber",
   },
 
   // ---- Social ----
   social: {
-    facebook: "https://www.facebook.com/SullivanJoeBSonsPlumbing",
-    google: "https://maps.google.com/?q=Joe+B+Sullivan+Sons+Plumbing+Nashville",
+    facebook: "https://www.facebook.com/honestplumbingtn/",
+    google:
+      "https://www.google.com/maps/place/Honest+Plumbing/@35.8628845,-86.5163946,17z/data=!3m1!4b1!4m5!3m4!1s0x8863f54ca952eb6b:0x71069bcd06dfc385!8m2!3d35.8628845!4d-86.5142059",
+    yelp: "https://www.yelp.com/biz/honest-plumbing-murfreesboro",
+    expertise: "https://www.expertise.com/tn/murfreesboro/plumbing#HonestPlumbing",
   },
 
   // ---- Primary keyword cluster (for meta + content) ----
   primaryKeywords: [
-    "Nashville plumber",
-    "plumbing Nashville TN",
-    "water heater repair Nashville",
-    "tankless water heater Nashville",
-    "commercial plumbing Nashville",
-    "sewer line replacement Nashville",
+    "Murfreesboro plumber",
+    "plumber Murfreesboro TN",
+    "Middle Tennessee plumber",
+    "tankless water heater Murfreesboro",
+    "water heater repair Murfreesboro",
+    "sewer and drain Murfreesboro",
+    "water filtration Murfreesboro",
+    "residential plumber Rutherford County",
   ],
 } as const;
 

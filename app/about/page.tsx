@@ -7,34 +7,32 @@ import { services } from "@/lib/services";
 import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata: Metadata = {
-  title: "About Joe B. Sullivan & Sons Plumbing",
-  description: `Family-owned Nashville plumbing company since ${siteConfig.business.foundingYear}. Licensed master plumbers serving Davidson and Williamson counties — commercial and residential, with warranty service for AO Smith, Bradford White, State Industries, and Whirlpool.`,
+  title: "About Honest Plumbing",
+  description: `Honest Plumbing is a licensed and insured residential plumbing company in Murfreesboro, TN — owned by Master Plumber Aaron Kelly (TN license #4034). Serving Middle Tennessee with honest consultation, fair pricing, and clean work.`,
   alternates: { canonical: `${siteConfig.url}/about` },
   openGraph: {
-    title: "About Joe B. Sullivan & Sons | Nashville's Heritage Plumbing Company",
-    description: `Family-owned Nashville plumbing since ${siteConfig.business.foundingYear}.`,
+    title: "About Honest Plumbing | Murfreesboro Master Plumber",
+    description: `Locally owned residential plumbing in Murfreesboro, TN. Master Plumber Aaron Kelly · License #4034 · Licensed, Bonded & Insured.`,
     url: `${siteConfig.url}/about`,
   },
 };
 
-const yearsInBusiness = new Date().getFullYear() - siteConfig.business.foundingYear;
-
 const valueProps = [
   {
     title: "Flat-price quotes, no surprises",
-    body: "Every job is quoted as a flat price after diagnosis — parts, labor, permit, haul-away, and warranty registration all itemized. No per-hour open meter, no mid-job upcharges, no 'we found something extra' once we've started. The number we tell you up front is the number you pay.",
+    body: "Every job is quoted as a flat price after diagnosis — parts, labor, and any required permits all itemized. No per-hour open meter, no mid-job upcharges, no 'we found something extra' once we've started. The number we tell you up front is the number you pay.",
   },
   {
     title: "Licensed master plumber on every job",
-    body: "Frank Sullivan is the licensed Tennessee master plumber on record for every Joe B. Sullivan & Sons job. Verifiable on the state board. Every install and repair is supervised by a licensed master plumber — not handed off to an apprentice running solo.",
+    body: "Aaron Kelly is the licensed Tennessee Master Plumber on record — license #4034, verifiable on the state board. Every install and repair is supervised and completed by a licensed plumber, not handed off to an apprentice running solo.",
   },
   {
     title: "Honest answers about repair vs. replace",
-    body: "Most of what other plumbers tell you needs replacement, we can actually repair. We carry parts for obsolete fixtures, old water heaters, and pre-war steam units — and we'll tell you straight when something genuinely needs replacing and when a $200 repair will buy you another five years.",
+    body: "Most of what you might assume needs full replacement is actually repairable, and we'll tell you straight when something genuinely needs replacing versus when a smaller repair will buy you several more years. The honest answer is part of what you're paying for.",
   },
   {
-    title: "Authorized warranty service",
-    body: "We're authorized warranty service for AO Smith, Bradford White, State Industries, and Whirlpool water heaters. That means warranty parts claims are filed by us, the repair is fast, and you don't deal with the manufacturer. Most coverage gets handled in a single visit.",
+    title: "Clean work, on time",
+    body: "We show up when we say we will, we clean up after the work is done, and we test everything before we leave. Plumbing should be invisible when it's working. That's the standard we hold every job to.",
   },
 ];
 
@@ -69,27 +67,21 @@ export default function AboutPage() {
 
           <div className="max-w-3xl">
             <p className="eyebrow mb-4">
-              Family-owned · Nashville since {siteConfig.business.foundingYear}
+              Locally owned · Murfreesboro, Tennessee
             </p>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.05] text-ink mb-7">
-              We&apos;re Nashville&apos;s heritage plumbing company —{" "}
-              <span className="italic text-forest">five generations</span> of
-              Sullivans on the same family business.
+              We&apos;re your local plumber —{" "}
+              <span className="italic text-forest">licensed, insured,</span>{" "}
+              and honest about the work.
             </h1>
             <p className="text-lg text-ink-muted leading-relaxed">
-              {siteConfig.shortName} was founded in {siteConfig.business.foundingYear}, and
-              we&apos;ve been the same family ever since. {yearsInBusiness}{" "}
-              years in Nashville means we&apos;ve plumbed buildings most people
-              have never set foot in — pre-war boilers under Church Street
-              office buildings, steam radiators in 1910s East Nashville
-              bungalows, restaurant kitchens up and down Broadway, and now
-              tankless installs in Brentwood new-builds. Frank Sullivan is the
-              licensed master plumber on record. The phone gets answered live,
-              the truck shows up when we say it will, and the quote you get is
-              flat-price and itemized.{" "}
+              {siteConfig.shortName} is a residential plumbing company based
+              in Murfreesboro and serving Middle Tennessee. Owned by Tennessee
+              Master Plumber Aaron Kelly (license #4034). The phone gets
+              answered, the truck shows up when we say it will, and the quote
+              you get is a flat price.{" "}
               <em>
-                Honest and reliable plumbing — that&apos;s been the entire
-                business model since 1895.
+                Service you can trust — that&apos;s the whole business model.
               </em>
             </p>
           </div>
@@ -101,12 +93,12 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-2 lg:grid-cols-4 gap-8">
           {[
             {
-              value: yearsInBusiness.toString(),
-              label: "Years in Nashville",
+              value: "10+",
+              label: "Years on service calls",
             },
             {
-              value: "5th",
-              label: "Generation Sullivans",
+              value: "#4034",
+              label: "TN Master Plumber",
             },
             { value: "100%", label: "Licensed & insured" },
             { value: "Flat", label: "Price quotes always" },
@@ -128,60 +120,51 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="grid md:grid-cols-12 gap-10 md:gap-14 mb-12 items-start">
             <div className="md:col-span-5">
-              <div className="relative aspect-[5/6] overflow-hidden rounded-sm shadow-[0_8px_30px_-12px_rgba(30,58,138,0.35)]">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-sm shadow-[0_8px_30px_-12px_rgba(30,58,138,0.35)]">
                 <Image
-                  src="https://static.wixstatic.com/media/dfd6ea_bad44d2ba479b1cfe00b492ee345a6d0.jpg"
-                  alt="Paul and Joe Sullivan — Joe B. Sullivan & Sons Plumbing, Nashville"
+                  src="/images/owner-2.jpg"
+                  alt="Aaron Kelly — Owner and Master Plumber at Honest Plumbing"
                   fill
                   sizes="(min-width: 768px) 380px, 90vw"
                   className="object-cover"
                 />
               </div>
               <p className="mt-4 text-xs uppercase tracking-[0.2em] text-ink-muted">
-                Pictured: Paul and Joe Sullivan
+                Pictured: Aaron Kelly · Owner & Master Plumber
               </p>
             </div>
             <div className="md:col-span-7">
               <p className="eyebrow mb-3">Our story</p>
               <h2 className="font-display text-3xl lg:text-4xl text-ink leading-tight">
-                How a one-shop Nashville plumber became a five-generation
-                family business.
+                Built on honest consultation and clean work.
               </h2>
             </div>
           </div>
           <div className="prose-editorial">
             <p>
-              Joe B. Sullivan founded the company in {siteConfig.business.foundingYear},
-              when Nashville was still a city of about 80,000 people, water
-              mains were just being run to outlying neighborhoods, and indoor
-              plumbing was a new luxury most homes were still adding. Joe B.
-              learned the trade as an apprentice, got his master plumber
-              ticket, and started running calls out of a shop near downtown
-              with a horse-drawn wagon to haul fixtures.
+              I&apos;ve been working residential plumbing service calls
+              across Middle Tennessee for more than ten years. In that time
+              I&apos;ve seen what good plumbing work looks like — and
+              what cuts corners look like a few years later. Honest Plumbing
+              is built on the first.
             </p>
             <p>
-              The business passed from Joe B. to his sons, then to his
-              grandsons, then to his great-grandsons — each generation training
-              the next, each generation keeping the same name on the door.
-              We&apos;ve moved the shop a few times (we&apos;re now at 292
-              Hermitage Avenue in East Nashville), upgraded the trucks from
-              wagons to vans, swapped lead and galvanized fittings for PEX
-              and copper, and added authorized warranty service for AO Smith,
-              Bradford White, State Industries, and Whirlpool — but the rest
-              of the operation has stayed remarkably consistent for 130+
-              years.
+              We&apos;re a small, locally owned operation based in
+              Murfreesboro. Every job is run by a licensed plumber. Pricing
+              is flat-rate and quoted after diagnosis, not estimated and then
+              padded once the work is underway. Consultations are honest —
+              if a repair is the right call instead of a replacement,
+              that&apos;s what we&apos;ll recommend.
             </p>
             <p>
-              Today Frank Sullivan is the licensed master plumber on record,
-              and {siteConfig.shortName} serves Davidson and Williamson
-              counties — East Nashville and the urban core, Belle Meade and
-              Forest Hills, Green Hills and Hillsboro Village, Brentwood and
-              Franklin in Williamson. We do both commercial and residential,
-              with a particular specialty in commercial water heater and
-              boiler service. The phone still gets answered live, the trucks
-              still show up on time, and the name on the door is still
-              Sullivan.
+              We serve homeowners across Rutherford and the surrounding
+              counties — Murfreesboro, Smyrna, La Vergne, Nolensville,
+              Brentwood, Franklin, and the rest of the Middle Tennessee
+              area. Tankless and tank water heaters, sewer and drain,
+              water filtration, kitchen and bath plumbing, and full
+              repipes are our day-to-day work. Service you can trust.
             </p>
+            <p className="font-semibold text-ink">— Aaron Kelly</p>
           </div>
         </div>
       </section>
@@ -191,7 +174,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <p className="eyebrow text-copper-light mb-3">How we work</p>
           <h2 className="font-display text-3xl lg:text-4xl mb-12 leading-tight max-w-2xl">
-            Four promises we make on{" "}
+            Four promises on{" "}
             <span className="italic">every single job.</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -233,32 +216,32 @@ export default function AboutPage() {
             </div>
             <div className="card-press p-6">
               <p className="text-xs text-copper-deep tracking-[0.2em] uppercase mb-2">
-                Insurance
+                Insurance & bonding
               </p>
-              <p className="font-display text-2xl text-ink">$2M / $2M</p>
+              <p className="font-display text-2xl text-ink">Fully covered</p>
               <p className="text-xs text-ink-muted mt-2">
-                General liability + workers&apos; comp. Certificate of
-                insurance available on request.
+                General liability and bonding. Certificate of insurance
+                available on request.
               </p>
             </div>
             <div className="card-press p-6">
               <p className="text-xs text-copper-deep tracking-[0.2em] uppercase mb-2">
-                Warranty service
+                Recognition
               </p>
-              <p className="font-display text-2xl text-ink">4 brands</p>
+              <p className="font-display text-2xl text-ink">Expertise.com</p>
               <p className="text-xs text-ink-muted mt-2">
-                Authorized warranty for AO Smith, Bradford White, State
-                Industries, and Whirlpool water heaters.
+                Recognized as one of the Best Plumbers in Murfreesboro by
+                Expertise.com.
               </p>
             </div>
             <div className="card-press p-6">
               <p className="text-xs text-copper-deep tracking-[0.2em] uppercase mb-2">
                 Coverage area
               </p>
-              <p className="font-display text-2xl text-ink">Davidson + Williamson</p>
+              <p className="font-display text-2xl text-ink">Middle Tennessee</p>
               <p className="text-xs text-ink-muted mt-2">
-                Residential and commercial plumbing service across the
-                Nashville metro and Williamson County.
+                Residential plumbing service across Rutherford, Williamson,
+                and surrounding counties.
               </p>
             </div>
           </div>

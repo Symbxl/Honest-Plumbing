@@ -5,9 +5,9 @@ import { siteConfig } from "@/lib/site-config";
 import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata: Metadata = {
-  title: "Plumbing Services in Nashville",
+  title: "Plumbing Services in Murfreesboro & Middle Tennessee",
   description:
-    "Joe B. Sullivan & Sons plumbing services across Nashville: water heater repair and installation, tankless conversions, commercial boiler service, drain cleaning, sewer and water line replacement, backflow and gas line work.",
+    "Honest Plumbing services across Murfreesboro and Middle Tennessee: tankless and tank water heaters, sewers and drains, water filtration, kitchen and bathroom plumbing, and full water and sewer repipes.",
   alternates: { canonical: `${siteConfig.url}/services` },
 };
 
@@ -25,13 +25,13 @@ export default function ServicesIndex() {
           <div className="max-w-3xl mb-16">
             <p className="eyebrow mb-4">Services</p>
             <h1 className="font-display text-5xl lg:text-6xl leading-[1.05] text-ink mb-6">
-              Plumbing services across Nashville.
+              Plumbing services across Middle Tennessee.
             </h1>
             <p className="text-lg text-ink-muted leading-relaxed">
-              Six core services. Residential and commercial. Flat-price quotes,
-              licensed master plumber on every job, authorized warranty for AO
-              Smith, Bradford White, State Industries, and Whirlpool. Pick the
-              service below and see real pricing.
+              Residential plumbing across Murfreesboro and the surrounding
+              counties. Flat-price quotes, licensed master plumber on every
+              job, and honest consultation up front. Pick the service below
+              for details.
             </p>
           </div>
 
@@ -44,7 +44,7 @@ export default function ServicesIndex() {
               >
                 <div className="flex items-start justify-between mb-5">
                   <div className="font-display text-3xl text-copper-deep">
-                    0{i + 1}
+                    {String(i + 1).padStart(2, "0")}
                   </div>
                   <span
                     aria-hidden

@@ -16,333 +16,347 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    slug: "water-heater-repair-installation",
+    slug: "tankless-water-heaters",
+    name: "Tankless Water Heater Installation & Service",
+    shortName: "Tankless Water Heaters",
+    metaTitle:
+      "Tankless Water Heater Installation & Service in Murfreesboro | Honest Plumbing",
+    metaDescription:
+      "Tankless water heater installation, annual service, and repair in Murfreesboro and across Middle Tennessee. Endless hot water, lower energy bills, and a service life that often doubles or triples a standard tank.",
+    hero: "Endless hot water. Lower bills. Longer service life.",
+    image: "/images/work-1.jpg",
+    imageAlt:
+      "Tankless water heater installed by Honest Plumbing in Middle Tennessee",
+    intro:
+      "Tankless water heaters use less energy and less water than standard tanks, and a quality unit installed and serviced properly will commonly last two to three times as long. We install new tankless systems across Murfreesboro and the surrounding Middle Tennessee area, handle repairs and warranty work on existing units, and provide the annual service that keeps them running at full efficiency.",
+    sections: [
+      {
+        heading: "Installation done right",
+        body: "Most homes converting from a tank to a tankless need three things sized correctly: the gas line, the venting, and the cold-water inlet protection. We run a properly sized gas line for the higher BTU demand of a tankless unit, install sealed concentric stainless venting, and add a scale-inhibiting filter on the inlet for Middle Tennessee's moderately hard water. The result is a clean install that meets code, passes inspection, and lasts the full design life of the unit.",
+      },
+      {
+        heading: "Repairs on any brand",
+        body: "We repair tankless units from every major brand whether or not we installed it. Most calls are flow sensor, ignition, or scale-related — issues that resolve in a single visit once they're diagnosed correctly. If a heat exchanger has failed because the unit was never descaled, we'll quote the repair against a replacement honestly so you can decide which makes sense.",
+      },
+      {
+        heading: "Annual service is non-negotiable",
+        body: "Middle Tennessee water is moderately hard, and tankless heat exchangers scale up over time. We descale annually with a circulating flush — it takes under an hour and restores the unit's efficiency. Skip annual service for two or three years and you'll start seeing error codes, reduced flow, and eventually a heat exchanger failure that costs more than a decade of maintenance. Most customers book their service in the fall.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Is a tankless water heater worth it in Middle Tennessee?",
+        a: "For homeowners staying in the house long-term, families that run out of hot water during back-to-back showers, or anyone who wants to recover the floor space a tank takes up — yes. We'll give you an honest payback estimate during the in-home quote so you can decide.",
+      },
+      {
+        q: "How often does a tankless need service?",
+        a: "Once a year. A short descaling flush keeps the heat exchanger clean and the unit running efficiently. Annual service is the single biggest factor in whether a tankless makes it to its full service life.",
+      },
+      {
+        q: "Do you service tankless units you didn't install?",
+        a: "Yes. We service every major brand and handle annual descaling, repairs, and warranty work on units we did not originally install.",
+      },
+    ],
+    keywords: [
+      "tankless water heater Murfreesboro",
+      "tankless installation Middle Tennessee",
+      "tankless service Murfreesboro",
+      "tankless repair Rutherford County",
+    ],
+  },
+  {
+    slug: "water-heater-services",
     name: "Water Heater Repair & Installation",
     shortName: "Water Heaters",
     metaTitle:
-      "Water Heater Repair & Installation in Nashville | Joe B. Sullivan & Sons",
+      "Water Heater Repair & Installation in Murfreesboro | Honest Plumbing",
     metaDescription:
-      "Nashville's longest-running water heater specialists. Repair, replacement, and installation of gas and electric tank water heaters. Warranty service for AO Smith, Bradford White, State, and Whirlpool.",
-    hero: "Hot water back on. Today, usually.",
-    image:
-      "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=1600&q=70",
+      "Gas, electric, and hybrid water heater installation, repair, and maintenance in Murfreesboro and Middle Tennessee. Recirculation pumps, anode replacement, and honest repair-vs-replace advice.",
+    hero: "Hot water back on. Today, in most cases.",
+    image: "/images/work-2.jpg",
     imageAlt:
-      "Plumber installing a residential gas water heater — Joe B. Sullivan & Sons Plumbing, Nashville",
+      "Residential water heater installation by Honest Plumbing in Murfreesboro",
     intro:
-      "Joe B. Sullivan & Sons has been Nashville's go-to water heater company since 1895. We diagnose and repair gas, electric, and high-efficiency tank water heaters every day across Davidson and Williamson counties — and when a unit isn't worth saving, we install the right replacement and haul the old one away the same visit. We're authorized warranty service for AO Smith, Bradford White, State Industries, and Whirlpool, which means most warranty parts are covered and turnaround is fast.",
+      "We install and repair gas, electric, and hybrid water heaters across Murfreesboro and the surrounding Middle Tennessee area. Standard tank repairs are usually a same-day fix, and replacements are scheduled fast so you're not without hot water for long. We size the replacement to your household's real peak demand and register the manufacturer warranty before we leave.",
     sections: [
       {
-        heading: "When to repair versus when to replace",
-        body: "If your water heater is under 8 years old, the repair almost always makes sense — a bad thermocouple, a failed heating element, a corroded anode rod, or a sticky T&P valve is a $150–$450 fix, not a $1,800 replacement. Past 10–12 years on a standard tank, the math shifts: tanks corrode from the inside, and once you start seeing rust in the hot water, weeping at the base, or a popping/rumbling sound from sediment buildup, replacement is the right call. We'll tell you which category you're in honestly — including when a $200 repair will buy you another year before the inevitable replacement. Most Nashville homes we service get 10–13 years out of a quality tank heater with annual flushing.",
+        heading: "Repair or replace — an honest answer",
+        body: "If your water heater is under eight years old, a repair is almost always the right call. A bad thermocouple, failed element, sticky T&P valve, or corroded anode is a straightforward fix. Past ten or twelve years, the math shifts: tanks corrode from the inside, and once you see rust in the hot water, weeping at the base, or a popping sound from sediment, replacement is the right answer. We'll tell you which category you're in.",
       },
       {
-        heading: "Brands we install — and why",
-        body: "We install AO Smith, Bradford White, State Industries, Rheem, and Whirlpool tank water heaters. Bradford White is what we put in our own homes — built in Pennsylvania, available only through licensed plumbers (you can't get one at Home Depot), and our warranty failure rate is well under the industry average. AO Smith is the value play for budget-conscious replacements. State Industries (made in Ashland City, TN, right up the road) is solid for warranty work and we keep parts on the truck. Whatever you choose, we register your warranty before we leave so you don't lose coverage on a paperwork technicality.",
+        heading: "Gas, electric, and hybrid",
+        body: "We install and service gas, electric, and heat-pump (hybrid) water heaters. Hybrid units are roughly three times as efficient as a standard electric tank and qualify for federal tax credits in many cases — they're a strong fit for homes with electric water heating that want a meaningful drop in the monthly utility bill. We'll walk you through the trade-offs honestly before you spend the money.",
       },
       {
-        heading: "Sizing your replacement correctly",
-        body: "Most Nashville homes are under-sized on hot water. A family of four running two showers in the morning needs a 50-gallon tank minimum for a gas unit, or 65–80 gallons for electric. If you've added bathrooms, a soaking tub, or a high-flow shower head and the hot water runs out, your tank is too small — not broken. We calculate your peak demand (number of fixtures × flow rate × use period), then size the tank to that, not to whatever was there before. For homes with chronic hot-water shortages, a tankless conversion is often the better answer — see our tankless water heater page.",
-      },
-      {
-        heading: "Same-day service, real pricing",
-        body: "Most water heater calls in Nashville are scheduled same-day or next-day. We'll quote a flat price after diagnosing — no surprises mid-job, no per-hour open meter. Standard tank replacements in the Nashville metro range $1,400–$2,800 installed (parts, labor, permit, haul-away of the old unit, and warranty registration), with the spread driven by tank size, gas vs. electric, and whether the install needs new water shutoffs, expansion tank, or venting work. We'll give you the number before we start.",
+        heading: "Recirculation pumps and maintenance",
+        body: "If your master bath sits 40 feet from the water heater and the water runs for a minute before it's hot, a hot-water recirculation pump fixes that — instant hot water at every fixture, less water wasted down the drain. We install and service recirculation systems and also handle annual tank flushes and anode rod replacement to extend the life of the unit you already own.",
       },
     ],
     faqs: [
       {
-        q: "How much does water heater installation cost in Nashville?",
-        a: "Standard tank water heater installation in the Nashville area typically runs $1,400–$2,800 fully installed, including the unit, labor, permit, haul-away of the old heater, and warranty registration. Tankless conversions run $3,500–$6,500 depending on gas line and venting requirements.",
+        q: "How long should a water heater last?",
+        a: "A standard tank heater with annual maintenance usually goes 10–13 years in Middle Tennessee. Skipping maintenance and ignoring the anode rod commonly cuts that to 7–9. Tankless units routinely make 18–22 years with proper annual service.",
       },
       {
-        q: "Do you handle warranty work on AO Smith, Bradford White, State, and Whirlpool water heaters?",
-        a: "Yes — we're an authorized warranty service provider for all four manufacturers. If your water heater is still under warranty, we file the parts claim for you and turn around the repair quickly. Bring the model and serial number when you call so we can verify coverage before the truck rolls.",
+        q: "How quickly can you replace a water heater?",
+        a: "In most cases we can be on-site the same day or the next day. Standard tank replacements take a few hours start to finish, including haul-away of the old unit.",
       },
       {
-        q: "How long does a water heater last in Nashville?",
-        a: "Standard tank water heaters last 10–13 years in most Nashville homes with annual maintenance (flushing the tank and checking the anode rod). Tankless units typically last 18–22 years. Hard water in some Davidson County neighborhoods shortens life by 1–3 years if the tank isn't flushed regularly.",
+        q: "Do you install recirculation pumps?",
+        a: "Yes. We install and service hot-water recirculation systems so you get hot water at the faucet without the long wait — useful in larger homes or when the water heater sits far from the bathrooms.",
       },
     ],
     keywords: [
-      "water heater repair Nashville",
-      "water heater installation Nashville",
-      "AO Smith warranty Nashville",
-      "Bradford White Nashville",
-      "Rheem water heater Nashville",
+      "water heater repair Murfreesboro",
+      "water heater installation Middle Tennessee",
+      "hybrid water heater Murfreesboro",
+      "recirculation pump Murfreesboro",
     ],
   },
   {
-    slug: "tankless-water-heaters",
-    name: "Tankless Water Heater Installation & Repair",
-    shortName: "Tankless Water Heaters",
+    slug: "sewers-and-drains",
+    name: "Sewer & Drain Services",
+    shortName: "Sewers & Drains",
     metaTitle:
-      "Tankless Water Heater Installation & Repair in Nashville | Sullivan Plumbing",
+      "Sewer & Drain Services in Murfreesboro | Honest Plumbing",
     metaDescription:
-      "Tankless water heater installation, repair, and descaling in Nashville. Rinnai, Navien, Noritz, and Rheem. Endless hot water, 18–22 year service life, and real Nashville-specific advice on whether it's worth it.",
-    hero: "Endless hot water. Twenty years of it.",
-    image:
-      "https://images.unsplash.com/photo-1714894691666-e8bb020c781c?auto=format&fit=crop&w=1600&q=70",
+      "Drain cleaning, sewer cleaning and repair, root removal, hydro-jetting, and clean-out installation in Murfreesboro and Middle Tennessee. Camera inspections and honest repair-vs-clean recommendations.",
+    hero: "Clog cleared. Line camera-inspected. Honest answer next.",
+    image: "/images/work-3.jpeg",
     imageAlt:
-      "Wall-mounted tankless water heater installation in a Nashville home",
+      "Drain and sewer service performed by Honest Plumbing in Middle Tennessee",
     intro:
-      "Tankless water heaters make sense for the right Nashville home — and don't for others. We install Rinnai, Navien, Noritz, and Rheem tankless units across the Nashville metro, and we'll tell you straight whether the conversion is worth the upfront cost for your specific house. We also do annual descaling and service on existing tankless units (Nashville's water is moderately hard and tankless units need yearly maintenance to hit their full service life).",
+      "We clear drains, repair sewer lines, install clean-outs, and run camera inspections across Murfreesboro and the surrounding Rutherford County area. Most residential drain calls are same-day. We default to a cable machine because it's the right tool for most clogs, and we recommend hydro-jetting only when we can show you, on camera, why it's the right choice.",
     sections: [
       {
-        heading: "Tankless vs. tank: who actually benefits",
-        body: "Tankless makes financial sense if you (a) plan to stay in the house 10+ years, (b) currently run out of hot water during peak use, or (c) have a finished basement where you can recover the tank's floor space. The savings on a typical Nashville home are real but modest — about $80–$140/year on a natural-gas tankless versus a tank — so the payback math depends mostly on the installed cost difference and how long you'll live there. The 18–22 year service life means you'll typically skip one tank replacement cycle, which is where the real lifetime savings live.",
+        heading: "Drain cleaning and clearing",
+        body: "Kitchen sinks, bath drains, laundry standpipes, and toilet clogs — most of these clear with a properly sized cable machine through the right access point. We work through existing clean-outs and traps rather than tearing out walls or floors. If the line keeps backing up after cleaning, we camera the line and show you exactly what's happening so the next step is informed.",
       },
       {
-        heading: "Installation: what changes from a tank install",
-        body: "A tankless conversion in Nashville typically requires three upgrades beyond the unit itself: a larger gas line (most older homes have a half-inch line that won't feed the higher BTU demand — we run a three-quarter or one-inch line to the unit), stainless steel concentric venting (sealed combustion, exits through the side wall instead of up the flue), and a softener or scale inhibitor on the cold-water inlet for Nashville's moderately hard water. We factor all of this into the flat quote up front. Typical installed cost in the metro: $3,500–$6,500 depending on whether the gas line and venting need significant rework.",
+        heading: "Sewer cleaning, root removal, and hydro-jetting",
+        body: "Older sewer laterals in Middle Tennessee almost all catch tree roots at the joints. We cable-cut the roots when that's enough, hydro-jet when the line has heavier grease, scale, or recurring root intrusion, and recommend repair or replacement only when the line genuinely won't hold any longer. Camera footage of the line is part of how we explain the recommendation — you see what we see.",
       },
       {
-        heading: "Annual descaling — non-negotiable in Nashville",
-        body: "Nashville water averages around 70–90 ppm hardness (moderately hard), and tankless heat exchangers scale up over time. We descale tankless units annually with a circulating vinegar or descaling-solution flush — takes about 45 minutes and resets the unit's efficiency. Skip this for three years in a row and you'll start seeing error codes, reduced flow rate, and eventually a $700–$1,200 heat exchanger replacement. Most homeowners book annual descaling in the fall before heating season. Our maintenance program covers it plus the tank flush on standard units.",
-      },
-      {
-        heading: "Pricing and what's included",
-        body: "Tankless install in the Nashville metro: $3,500–$6,500 fully installed (unit, gas line upgrade if needed, venting, install labor, permit, and Sullivan-registered manufacturer warranty). Annual descaling: $185. Tankless repair: $145 service call applied to the repair, then flat-rate quotes by repair type. We service all major brands even if we didn't install the unit. Warranty work on Rinnai, Navien, and Noritz units we install is handled in-house at no extra charge during the warranty period.",
+        heading: "Clean-out installation and sewer repair",
+        body: "If your home doesn't have a proper exterior sewer clean-out, future drain service is harder and more expensive than it needs to be. We install code-compliant clean-outs that give us (and any future plumber) clean, fast access to the line. Spot repairs and section replacements on damaged sewer lines are part of the same trade — done with permits and inspection so the work is protected long-term.",
       },
     ],
     faqs: [
-      {
-        q: "Is a tankless water heater worth it in Nashville?",
-        a: "For households that stay 10+ years, currently run out of hot water at peak use, or want to recover the floor space — yes. For short-term homeowners or homes with adequate tank capacity already, the math is closer to break-even. We do an honest payback calculation during the in-home quote.",
-      },
-      {
-        q: "How often does a tankless water heater need to be serviced in Nashville?",
-        a: "Once a year for descaling, given Nashville's moderately hard water. Skipping descaling shortens unit life and eventually causes heat exchanger failure ($700–$1,200 replacement). Annual maintenance is the single best thing you can do for a tankless unit.",
-      },
-      {
-        q: "What size tankless water heater do I need for my Nashville home?",
-        a: "Most Nashville single-family homes need a 180,000–199,000 BTU natural gas tankless unit (Rinnai RU199 / Navien NPE-240A2 class) to handle two showers and a kitchen sink simultaneously. Smaller homes with one bath can run on a 150,000 BTU class unit. We size it during the quote based on your actual fixture count and peak flow.",
-      },
-    ],
-    keywords: [
-      "tankless water heater Nashville",
-      "Rinnai installation Nashville",
-      "Navien tankless Nashville",
-      "tankless descaling Nashville",
-      "tankless conversion Nashville",
-    ],
-  },
-  {
-    slug: "commercial-plumbing",
-    name: "Commercial Plumbing & Boiler Service",
-    shortName: "Commercial Service",
-    metaTitle:
-      "Commercial Plumbing & Boiler Service in Nashville | Joe B. Sullivan & Sons",
-    metaDescription:
-      "Nashville's heritage commercial plumber. Boiler diagnostics and repair, commercial water heater service, steam unit repair, backflow, and new construction rough-ins. Licensed master plumber on every job.",
-    hero: "Heritage commercial plumbing. Same family since 1895.",
-    image:
-      "https://images.unsplash.com/photo-1701421047855-d7bafd8d6f69?auto=format&fit=crop&w=1600&q=70",
-    imageAlt:
-      "Commercial boiler room with industrial piping — heritage commercial plumbing in Nashville",
-    intro:
-      "Joe B. Sullivan & Sons has been doing commercial plumbing in Nashville for five generations — we've serviced churches, schools, restaurants, retail buildings, multi-family properties, hotels, and industrial facilities across Davidson County. Our specialty within commercial work is boiler diagnostics, repair, and commercial water heater installation. When a 30-year-old building has a boiler nobody else wants to touch because the parts are obsolete, we usually have the part on the truck or know exactly where to source it.",
-    sections: [
-      {
-        heading: "Boiler diagnostics and repair",
-        body: "We work on commercial boilers across Nashville — gas-fired hot water boilers, low-pressure steam, atmospheric and power-burner units, and the older cast-iron sectional boilers that still heat plenty of Nashville's pre-war buildings. Our master plumber Frank Sullivan has been on commercial boiler service in this market for decades; if the unit is repairable, we'll keep it running. When replacement is the right answer, we install AERCO, Lochinvar, Weil-McLain, and Burnham units depending on the load and the building's footprint. We also pull permits and coordinate state boiler inspection where required.",
-      },
-      {
-        heading: "Commercial water heaters",
-        body: "Restaurants, hotels, multi-family properties, and industrial laundries in Nashville all run different commercial water heater configurations — large-volume gas units, electric, indirect-fired off a boiler, or hybrid setups. We install, service, and warranty AO Smith, State Industries, Bradford White, and Rheem commercial units, and we know how to size correctly for actual peak demand (a Nashville hotel breakfast hour or a restaurant's 6:00 PM dish load is very different from residential peak demand). Replacement turnarounds are typically 24–72 hours for in-stock units.",
-      },
-      {
-        heading: "Steam unit and old-building expertise",
-        body: "Half of Nashville's commercial inventory is pre-1980, and a lot of it still runs on systems most plumbers don't service: low-pressure steam, gravity hot water, galvanized supply lines, and discontinued fixtures and parts. Joe B. Sullivan & Sons has maintained an extensive knowledge base of obsolete and discontinued parts — five generations of accumulated expertise on what's actually in Nashville's older buildings. If a national chain plumber tells you a steam radiator valve isn't repairable and the whole system needs replacement, get a second opinion. Most of the time it's repairable.",
-      },
-      {
-        heading: "New construction and tenant build-outs",
-        body: "We do full commercial plumbing rough-ins and trim-outs across the Nashville metro — restaurants, retail, light industrial, and multi-family. We coordinate with GCs, MEP engineers, and permit offices, and we work to specification (or call out a spec issue early if we see one). We also do tenant fit-outs on a fast-track schedule when leases are signed and the clock is running. Bonded and insured for commercial work, master-plumber-supervised on every job.",
-      },
-    ],
-    faqs: [
-      {
-        q: "Do you work on old commercial boilers in Nashville?",
-        a: "Yes — that's one of our specialties. We have five generations of Nashville commercial experience and maintain a parts inventory and supplier network for obsolete components. Most boilers other plumbers tell you are unrepairable, we can actually repair.",
-      },
-      {
-        q: "Can you handle commercial water heater warranty work?",
-        a: "Yes. We're authorized warranty service for AO Smith, Bradford White, State Industries, and Whirlpool — including their commercial product lines. We file the warranty parts claim and handle the install, you stay focused on running your business.",
-      },
-      {
-        q: "How fast can you respond to a commercial plumbing emergency in Nashville?",
-        a: "Our emergency service team prioritizes commercial calls during business hours. We aim for same-day arrival on no-hot-water and active-leak situations across Davidson County. For after-hours and weekend commercial emergencies, call the main line and follow the prompts — the on-call plumber will return your call promptly.",
-      },
-    ],
-    keywords: [
-      "commercial plumber Nashville",
-      "commercial boiler repair Nashville",
-      "commercial water heater Nashville",
-      "steam boiler repair Nashville",
-      "commercial plumbing contractor Nashville",
-    ],
-  },
-  {
-    slug: "drain-cleaning-unstopping",
-    name: "Drain Cleaning & Unstopping",
-    shortName: "Drain Cleaning",
-    metaTitle:
-      "Drain Cleaning & Unstopping in Nashville | Joe B. Sullivan & Sons Plumbing",
-    metaDescription:
-      "Drain cleaning and unstopping across Nashville. Kitchen, bath, laundry, and main line clogs cleared with cable machine, hydro-jetting, and camera diagnostics. Same-day service in most cases.",
-    hero: "Clog cleared. No mess left behind.",
-    image:
-      "https://images.unsplash.com/photo-1606340671662-27ee685dd111?auto=format&fit=crop&w=1600&q=70",
-    imageAlt:
-      "Plumber working on a drain line with professional tools in a Nashville home",
-    intro:
-      "Sullivan has cleared more drains across Nashville than we can count — kitchen sinks, bathroom lavatories, tub and shower drains, toilet stoppages, laundry standpipes, and main sewer line back-ups. We use cable machines for everyday clogs, hydro-jetting for grease and root intrusion, and a sewer camera when we need to see exactly what's happening fifty feet down the line. Most residential drain calls get same-day service.",
-    sections: [
-      {
-        heading: "Cable machine vs. hydro-jet: which you actually need",
-        body: "A cable (snake) machine handles the majority of drain clogs — hair in bathroom drains, kitchen sink grease blockages within 25 feet of the cleanout, and most toilet stoppages. Hydro-jetting uses high-pressure water (3,000–4,000 PSI) to cut through heavier grease deposits, scale buildup in older pipes, and tree-root intrusion in main sewer lines. We default to a cable machine because it's faster and cheaper; we recommend the jetter when the camera shows recurring grease or root issues that cabling won't actually resolve. Honest answer first, machine second.",
-      },
-      {
-        heading: "Main line back-ups: what's actually happening",
-        body: "When every drain in the house is slow at once and a toilet flushes water up into the shower or tub, you have a main sewer line back-up — not individual drain clogs. The most common Nashville cause is tree root intrusion at the joints of older clay or cast-iron sewer laterals, especially in East Nashville, Belmont-Hillsboro, and Sylvan Park neighborhoods where mature trees and 1920s–1950s sewer pipe are common. We cable and camera the line, identify the root location, and either jet-clean (buys you 2–4 years before the next event) or recommend a sewer line repair or replacement (permanent fix). We never push the replacement when cleaning will hold.",
-      },
-      {
-        heading: "Camera inspection: when it's worth it",
-        body: "A sewer camera inspection is worth the cost ($295 in the Nashville metro) when: you've had two or more main-line back-ups in 12 months, you're buying a house with a sewer line older than 1970, or you're trying to decide between repeated cleaning and a one-time line replacement. We record the inspection and email you the video, with marked timestamps for any defects we find. Some Nashville real estate transactions include a sewer camera as part of the inspection contingency — we do those routinely.",
-      },
-      {
-        heading: "Pricing and policy",
-        body: "Standard drain cleaning in Nashville: $185 for a kitchen, bath, or laundry drain via cleanout access, $245 for a toilet pull-and-clear, $295 for a main line cable through an exterior cleanout, $475–$650 for hydro-jetting depending on line size and length, $295 for camera inspection (waived if it leads to a repair we perform). We never use chemical drain cleaners — they damage older Nashville pipe (especially galvanized and cast iron). Same-day service in most cases; we'll tell you the actual ETA when you call.",
-      },
-    ],
-    faqs: [
-      {
-        q: "How much does drain cleaning cost in Nashville?",
-        a: "Standard drain cleaning in Nashville: $185 for a single fixture drain, $295 for a main line cable through the exterior cleanout, $475–$650 for hydro-jetting, and $295 for camera inspection (waived if it leads to a Sullivan-performed repair).",
-      },
       {
         q: "Why does my main line keep backing up?",
-        a: "Recurring main line back-ups in Nashville are almost always tree root intrusion at the joints of older clay or cast-iron sewer laterals, or a sag/belly in the line. A camera inspection identifies which it is. Cabling and jetting buy time; permanent repair requires spot replacement or full line replacement.",
+        a: "In most older Middle Tennessee homes, recurring main-line back-ups are tree roots at the joints of clay or cast-iron laterals. A camera inspection identifies the exact location. Cabling or jetting buys time; permanent repair requires spot replacement.",
       },
       {
-        q: "Can you clear a clog without ripping up my floor or walls?",
-        a: "Yes, in the vast majority of cases. We work through existing cleanouts, p-traps, or roof vents. We only open walls or floors when there's a confirmed broken pipe and no other access — and we'll tell you in advance if that's what's needed.",
+        q: "Do you use chemical drain cleaners?",
+        a: "No. Chemical cleaners damage older pipe and rarely solve the real problem. We clear with the right mechanical tool for the job — cable or jetter — and recommend a permanent fix only when one is actually needed.",
+      },
+      {
+        q: "Can you clear a clog without ripping up walls or floors?",
+        a: "Almost always, yes. We work through existing clean-outs, p-traps, or roof vents. We only open walls or floors when there's a confirmed broken pipe and no other access — and we'll tell you in advance if that's the case.",
       },
     ],
     keywords: [
-      "drain cleaning Nashville",
-      "main line back-up Nashville",
-      "sewer camera inspection Nashville",
-      "hydro jetting Nashville",
-      "toilet clog Nashville",
+      "drain cleaning Murfreesboro",
+      "sewer cleaning Middle Tennessee",
+      "hydro jetting Murfreesboro",
+      "root removal Murfreesboro",
+      "sewer camera inspection Murfreesboro",
     ],
   },
   {
-    slug: "sewer-water-line-replacement",
-    name: "Sewer & Water Line Replacement",
-    shortName: "Sewer & Water Lines",
+    slug: "water-filtration",
+    name: "Whole-House Water Filtration",
+    shortName: "Water Filtration",
     metaTitle:
-      "Sewer & Water Line Replacement in Nashville | Joe B. Sullivan & Sons",
+      "Whole-House Water Filtration in Murfreesboro | Honest Plumbing",
     metaDescription:
-      "Sewer line and water service line replacement in Nashville. Trenchless and traditional methods. Pipe replacement and repair for residential and commercial properties. Permitted, bonded, insured.",
-    hero: "Underground pipe done right. No surprises.",
-    image:
-      "https://images.unsplash.com/photo-1668291048339-d33756311d80?auto=format&fit=crop&w=1600&q=70",
+      "Whole-house water filtration systems, repairs, and selection consulting in Murfreesboro and Middle Tennessee. Honest advice about what your water actually needs — and what it doesn't.",
+    hero: "Cleaner water at every tap — sized for what your water actually needs.",
+    image: "/images/owner-2.jpg",
     imageAlt:
-      "Sewer and water service line replacement work — Joe B. Sullivan & Sons, Nashville",
+      "Water filtration system installation by Honest Plumbing in Middle Tennessee",
     intro:
-      "When the sewer or water line under your Nashville property fails, the work needs to be done by people who know Metro Nashville Codes, Metro Water Services connection requirements, and how to navigate the permit and inspection process without delays. We replace sewer laterals and water service lines across Davidson and Williamson counties — both trenchless (where appropriate) and traditional open-trench methods.",
+      "Whole-house water filtration is one of the easiest places to overspend if you don't know what's actually in your water. We test, recommend the right system for your specific supply, and install whole-house filtration that does what it says it will. We also repair and service existing filtration systems even if we didn't install them.",
     sections: [
       {
-        heading: "Sewer line replacement: trenchless vs. open trench",
-        body: "Trenchless sewer replacement (pipe bursting or pipe lining) is the right call when the existing line follows a relatively straight path, doesn't have significant collapses or back-pitched sections, and runs under landscaping, driveways, or hardscape you want to preserve. We use pipe bursting for full replacement (pulls a new HDPE line through the path of the old one), and CIPP lining for spot repairs where the host pipe is structurally sound but has cracks or small offsets. Traditional open-trench replacement is sometimes still the right answer — when the line has multiple major defects, has been re-routed multiple times, or runs in a path that would damage trenchless equipment. We'll tell you which method makes sense after a camera inspection.",
+        heading: "Selection: what your water actually needs",
+        body: "Middle Tennessee city water is generally clean but moderately hard, and well water in the surrounding rural areas can include iron, sulfur, sediment, and other concerns that municipal water doesn't have. The right system depends on what's actually in your supply — a sediment filter, a softener, an iron filter, a carbon block for taste and chlorine, or a reverse-osmosis stage at the kitchen tap are all different problems with different solutions. We test first, then recommend, then quote. Honest consultation is part of the job.",
       },
       {
-        heading: "Water service line replacement",
-        body: "Nashville water service lines (the line from your meter to your house) most commonly fail in homes built before 1960, where the original copper, galvanized, or in some cases lead service lines have corroded or split. Symptoms: chronically low water pressure, discolored water at fixtures throughout the house, or a water bill that suddenly doubled from an underground leak. We replace water service lines with 1\" or 1.25\" Type K soft copper or PEX-A (depending on local code preference and run distance). Permits, Metro Water coordination, and pressure testing are included.",
+        heading: "Whole-house installation",
+        body: "A whole-house system installs at the point of entry where the main supply enters the home, so every tap and every appliance benefits — softer water for the water heater and dishwasher, cleaner water for showers and laundry, better-tasting water at the kitchen sink. We size the system for your home's flow rate so pressure isn't compromised, and we install with proper bypass valves so future service is straightforward.",
       },
       {
-        heading: "Permits and what \"licensed, bonded, insured\" actually means in Nashville",
-        body: "Anyone touching the sewer lateral or water service line in Davidson County needs a Tennessee Master Plumber license, a Metro Nashville plumbing permit, and active bonding and insurance. Frank Sullivan is the licensed master plumber on record for every Joe B. Sullivan & Sons job — that means our permits get pulled correctly, our work passes inspection, and you're protected if something goes wrong. We file the permit, schedule the Metro inspection, and don't ask you for final payment until the inspection is signed off.",
-      },
-      {
-        heading: "What it costs",
-        body: "Sewer lateral replacement in the Nashville metro: $4,500–$12,000 depending on length, method (trenchless vs. open trench), depth, and whether the work crosses concrete, landscaping, or city right-of-way. Water service line replacement: $2,800–$7,500 depending on length, depth, and meter location. We provide flat-price quotes after a site visit and camera inspection — no estimates that balloon mid-job. Most sewer and water line projects are completed in 1–3 days.",
+        heading: "Repairs and service",
+        body: "Filtration systems need periodic media replacement, cartridge changes, and occasional valve service. We service systems from every major manufacturer and can repair or rebuild older units whenever that's the more sensible choice than replacement.",
       },
     ],
     faqs: [
       {
-        q: "How long does sewer line replacement take in Nashville?",
-        a: "Most residential sewer lateral replacements in Nashville take 1–2 days, including excavation, replacement, backfill, and Metro inspection. Trenchless replacements often finish in a single day. Larger or more complex jobs (city right-of-way coordination, multi-method approaches) can run 2–4 days.",
+        q: "Do I need a water filtration system on Murfreesboro city water?",
+        a: "City water in Murfreesboro and the surrounding municipalities is generally safe to drink. Many homeowners still want carbon filtration to remove the chlorine taste, and a softener if the hardness is causing scale on fixtures and appliances. We'll be honest about whether your specific home actually benefits.",
       },
       {
-        q: "Will my insurance cover sewer line replacement?",
-        a: "Standard homeowner policies in Tennessee usually don't cover sewer lateral replacement (it's wear-and-tear, not sudden damage), but service-line add-on policies and some umbrella coverages do. We'll provide you with the photos, camera footage, and documentation you need to file a claim. We don't do the claim filing — that's between you and your carrier — but we make it easy on you.",
+        q: "What about well water?",
+        a: "Well water often needs more — sediment filtration, an iron filter, sometimes a UV stage. We test the well water and design the system around what it actually contains rather than selling a generic package.",
       },
       {
-        q: "Do you handle the permit and inspection for sewer and water line work?",
-        a: "Yes. We pull the Metro Nashville plumbing permit, coordinate the Metro inspection, and don't ask for final payment until the work is signed off. The permit cost is included in our flat quote.",
+        q: "How often does a whole-house system need service?",
+        a: "Cartridge or media changes vary by system, water quality, and household use — typically every 6–12 months for cartridges, every 4–10 years for tank media. We'll set a service schedule that matches your specific install.",
       },
     ],
     keywords: [
-      "sewer line replacement Nashville",
-      "water service line Nashville",
-      "trenchless sewer Nashville",
-      "pipe bursting Nashville",
-      "Metro Nashville plumbing permit",
+      "water filtration Murfreesboro",
+      "whole house water filter Middle Tennessee",
+      "water softener Murfreesboro",
+      "well water treatment Rutherford County",
     ],
   },
   {
-    slug: "backflow-gas-lines",
-    name: "Backflow & Gas Line Service",
-    shortName: "Backflow & Gas",
+    slug: "kitchen-plumbing",
+    name: "Kitchen Plumbing",
+    shortName: "Kitchen",
     metaTitle:
-      "Backflow Installation & Gas Line Service in Nashville | Sullivan Plumbing",
+      "Kitchen Plumbing in Murfreesboro | Honest Plumbing",
     metaDescription:
-      "Backflow installation, testing, and repair in Nashville. Natural gas line installation and repair for residential and commercial customers. Licensed, certified backflow tester. Metro Water compliant.",
-    hero: "Code-compliant, permitted, signed off.",
-    image:
-      "https://images.unsplash.com/photo-1584774354932-62ceb99e6053?auto=format&fit=crop&w=1600&q=70",
+      "Kitchen plumbing service in Murfreesboro: faucets, sinks, garbage disposals, ice-maker lines, dishwasher installation, and honest fixture selection advice. Licensed, insured, clean work.",
+    hero: "Faucets, disposals, dishwashers, sinks — done right.",
+    image: "/images/owner-1.jpg",
     imageAlt:
-      "Copper piping for backflow prevention and gas line work in Nashville",
+      "Honest Plumbing technician working on kitchen plumbing in Middle Tennessee",
     intro:
-      "Backflow prevention and gas line work are the two areas of plumbing with the least margin for error — a failed backflow assembly contaminates a drinking water system, and a gas leak is a life-safety problem. Joe B. Sullivan & Sons does both routinely across Nashville: backflow installation, certified annual testing, and repair, plus natural gas line installation and repair for residential and commercial customers. Every job is permitted and inspected.",
+      "We do the full range of kitchen plumbing — faucet repair and installation, sink replacement, garbage disposal install and repair, refrigerator ice-maker lines, and dishwasher installation and removal. We also give honest fixture-selection advice so the disposal you buy actually fits your sink and the faucet you pick is one we'd put in our own kitchen.",
     sections: [
       {
-        heading: "Backflow installation and testing",
-        body: "Metro Water Services in Nashville requires backflow prevention assemblies on irrigation systems, fire suppression lines, commercial cooking equipment, and certain residential cross-connections. The assembly must be installed by a licensed plumber and tested annually by a certified backflow tester. We install RP (reduced-pressure) and DCV (double-check valve) assemblies, perform the annual certification test, file the test report with Metro Water, and repair or rebuild failed assemblies. Annual testing in Nashville runs $85 for a single residential assembly and is required by Metro Water — if you've ignored a notice, we can usually catch you up the same week.",
+        heading: "Faucets, sinks, and fixture selection",
+        body: "Big-box kitchen faucets and the ones a plumber installs aren't built the same — the better ceramic cartridges, brass body construction, and replaceable parts on contractor-grade fixtures translate to fewer service calls down the road. We're happy to install a fixture you've already bought, and equally happy to recommend one if you'd rather we pick. Either way the install is clean and the connections are right.",
       },
       {
-        heading: "Backflow repair: rebuild vs. replace",
-        body: "Most backflow failures we see in Nashville come from debris fouling check valves, worn rubber seats, or freeze damage to assemblies installed in unprotected exterior locations. Rebuild kits are usually $185–$385 installed and bring the assembly back to certified passing condition for several more years. Full assembly replacement is required when the body itself is cracked (freeze damage) or when an old assembly is no longer manufactured-supported. We carry rebuild kits for Watts, Wilkins, Apollo, and Febco assemblies on the truck.",
+        heading: "Garbage disposals",
+        body: "Disposals are commodity items that fail predictably — usually around year 8–12 — and replacement is straightforward. We install and repair every major brand, and we'll tell you whether yours is worth saving or whether the labor to repair is more than the unit costs new.",
       },
       {
-        heading: "Gas line installation and repair",
-        body: "We install and repair natural gas lines for residential and commercial customers across the Nashville metro — new appliance runs (range, dryer, water heater, pool heater, generator), tankless water heater gas line upgrades (most older Nashville homes need a larger gas line for a tankless install), and gas line repair after a confirmed leak. We pressure-test every gas line we install or repair, pull the Metro permit, and coordinate the Metro Codes inspection. If Piedmont Natural Gas has shut your service off due to a confirmed leak, we can usually get you re-pressurized within 24–48 hours including inspection.",
-      },
-      {
-        heading: "Gas leak emergencies",
-        body: "If you smell gas inside your home or business, leave immediately and call Piedmont Natural Gas at 1-800-752-7504 from outside. Once Piedmont has confirmed the leak and shut off your service, call Joe B. Sullivan & Sons — we coordinate the leak location, repair, pressure test, and re-light directly with Piedmont and Metro Codes. We do not bypass safety steps, and we do not work on a gas system that hasn't been properly isolated. Real safety first.",
+        heading: "Ice-maker lines and dishwashers",
+        body: "Refrigerator ice-maker lines are a common silent leak source when they're old plastic tubing. We replace with braided stainless lines and install proper shutoffs so future repairs don't require closing the main. Dishwasher installs and removals are routine work — we connect water, drain, and power correctly and verify there's no leak before we leave.",
       },
     ],
     faqs: [
       {
-        q: "Is annual backflow testing required in Nashville?",
-        a: "Yes, for any property with a backflow prevention assembly installed (irrigation, fire suppression, commercial kitchen, etc.). Metro Water Services in Nashville requires annual certification testing by a licensed tester and filing of the test report. We do the test, file the report, and email you a copy.",
+        q: "Will you install a fixture I already bought?",
+        a: "Yes. We're happy to install a fixture you purchased — and we'll give you our honest opinion of the fixture before we start. If it's a low-quality unit that's going to fail in two years, we'd rather tell you up front.",
       },
       {
-        q: "Can you upgrade my gas line for a tankless water heater?",
-        a: "Yes — and most older Nashville homes need exactly that. A typical half-inch existing gas line won't feed the higher BTU demand of a tankless unit. We run a properly sized three-quarter or one-inch line from the meter to the tankless, pressure-test, permit, and inspect.",
+        q: "How long does a kitchen faucet install take?",
+        a: "Most kitchen faucet replacements take 60–90 minutes including testing for leaks. Older sinks with corroded supply lines sometimes need an extra 30 minutes for shutoff replacement.",
       },
       {
-        q: "What should I do if I smell gas in my home?",
-        a: "Leave immediately, do not turn light switches on or off, and call Piedmont Natural Gas at 1-800-752-7504 from outside the home. Once Piedmont confirms the leak and shuts off service, call us to locate, repair, pressure-test, and coordinate restoration. Never work on a live gas system yourself.",
+        q: "Do you replace garbage disposals same-day?",
+        a: "Almost always. Disposal replacement is fast — under an hour in most cases — and we carry the common 3/4 and 1 HP units on the truck.",
       },
     ],
     keywords: [
-      "backflow installation Nashville",
-      "backflow testing Nashville",
-      "gas line installation Nashville",
-      "gas line repair Nashville",
-      "Metro Water backflow Nashville",
+      "kitchen plumbing Murfreesboro",
+      "garbage disposal install Murfreesboro",
+      "kitchen faucet repair Middle Tennessee",
+      "ice maker line Murfreesboro",
+    ],
+  },
+  {
+    slug: "bathroom-plumbing",
+    name: "Bathroom Plumbing",
+    shortName: "Bathroom",
+    metaTitle:
+      "Bathroom Plumbing in Murfreesboro | Honest Plumbing",
+    metaDescription:
+      "Bathroom plumbing in Murfreesboro and Middle Tennessee. Toilet installation and repair, faucet replacement, ADA fixtures, tub and shower valve work, and clean, code-compliant installs.",
+    hero: "Toilets, faucets, tub valves, ADA fixtures — installed right.",
+    image: "/images/hero-bg.jpg",
+    imageAlt:
+      "Bathroom plumbing service by Honest Plumbing in Middle Tennessee",
+    intro:
+      "We handle every bathroom plumbing need — toilet installation and repair, sink and shower faucet replacement, ADA-compliant fixtures, and tub and shower valve work. Installs are clean, code-compliant, and finished with a leak test before we leave.",
+    sections: [
+      {
+        heading: "Toilets",
+        body: "We install new toilets and repair the ones you already have. A new toilet install takes about an hour including the wax ring, supply line, and leak test. Most toilet repairs — running flush valves, leaking fill valves, loose tank-to-bowl bolts — are inexpensive same-visit fixes.",
+      },
+      {
+        heading: "Faucets and fixtures",
+        body: "Bath and lavatory faucet replacements are routine work. We'll tell you honestly when the existing fixture is worth rebuilding (decent brand, replaceable cartridges) versus when replacement makes more sense (corroded, discontinued parts, recurring drips).",
+      },
+      {
+        heading: "Tub & shower valves and ADA fixtures",
+        body: "Tub and shower valves are behind-the-wall work that has to be done right the first time — we install pressure-balanced anti-scald valves to current code, and we install ADA-compliant fixtures (grab bars, comfort-height toilets, accessible faucet handles) for homeowners aging in place or accommodating mobility needs.",
+      },
+    ],
+    faqs: [
+      {
+        q: "How much does toilet installation cost?",
+        a: "A standard toilet install in Murfreesboro is a flat-rate job — typically a few hundred dollars including the new wax ring, supply line, and haul-away of the old unit. We quote up front before starting.",
+      },
+      {
+        q: "Can you install grab bars and ADA-height toilets?",
+        a: "Yes. We install ADA-compliant grab bars, comfort-height toilets, and accessible faucet hardware. Common request from homeowners staying in their home as they get older.",
+      },
+      {
+        q: "Do I have to replace the whole tub valve, or just repair it?",
+        a: "Depends on the brand and age. Decent valves rebuild for a fraction of the replacement cost. Lower-quality or discontinued valves are usually easier to replace than to source parts for. We'll show you the diagnosis before recommending either path.",
+      },
+    ],
+    keywords: [
+      "bathroom plumbing Murfreesboro",
+      "toilet installation Middle Tennessee",
+      "shower valve Murfreesboro",
+      "ADA fixtures Murfreesboro",
+    ],
+  },
+  {
+    slug: "water-sewer-repipes",
+    name: "Water & Sewer Repipes",
+    shortName: "Water & Sewer Repipes",
+    metaTitle:
+      "Water & Sewer Repipes in Murfreesboro | Honest Plumbing",
+    metaDescription:
+      "Whole-home water repipes and sewer line replacement in Murfreesboro and Middle Tennessee. Removal and installation of supply piping and sewer piping. Permitted, inspected, and warrantied.",
+    hero: "Whole-home repipes. Permitted, inspected, warrantied.",
+    image: "/images/expertise-badge.png",
+    imageAlt:
+      "Water and sewer repipe project by Honest Plumbing in Middle Tennessee",
+    intro:
+      "When water supply pipes have corroded, or a sewer line has failed and a spot repair isn't going to hold, the right answer is a repipe. We remove old supply and sewer piping and install new piping to current code across Murfreesboro and the surrounding Middle Tennessee area. Every repipe is permitted, inspected, and warrantied.",
+    sections: [
+      {
+        heading: "Water supply repipes",
+        body: "Older homes with galvanized or corroded copper supply lines often share a symptom: hot water that runs but slowly, low pressure throughout the house, and discolored water at the fixtures. A repipe with PEX or new copper restores full flow and stops the recurring leak problem at the joints. We remove the old piping, install new lines through the existing wall and crawlspace runs where possible, and pressure-test before patching and finishing.",
+      },
+      {
+        heading: "Sewer repipes",
+        body: "When a sewer lateral has multiple failures, recurring back-ups, or is collapsed in sections, repeated cleaning and spot repair stop being the right answer. Sewer repipe replaces the line end-to-end — from the house tie-in to the main — and the new line is warrantied. We use trenchless methods where the line path allows, and traditional open-trench excavation where the geometry of the property makes trenchless the wrong choice.",
+      },
+      {
+        heading: "Permits, inspections, and warranty",
+        body: "Every repipe we do is pulled on a permit, inspected by the local code authority, and warrantied in writing. That's what \"licensed, bonded, and insured\" is supposed to mean in practice — the work is documented, signed off, and you're protected if something goes wrong.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Do I need a whole-home repipe or just a section?",
+        a: "If you've had two or more pinhole leaks in the same year, or pressure is dropping at multiple fixtures, a full repipe usually makes more financial sense than chasing leaks. We'll diagnose honestly — spot repair when it's the right answer, full repipe only when it actually is.",
+      },
+      {
+        q: "How long does a repipe take?",
+        a: "A residential supply repipe is typically 2–4 days depending on the size of the home and access. Sewer line replacements run 1–3 days. We minimize the time your water is off.",
+      },
+      {
+        q: "Is the work permitted and inspected?",
+        a: "Yes — every repipe is pulled on a permit, inspected by the local jurisdiction, and we don't ask for final payment until the inspection is signed off.",
+      },
+    ],
+    keywords: [
+      "water repipe Murfreesboro",
+      "sewer repipe Middle Tennessee",
+      "whole house repipe Murfreesboro",
+      "sewer line replacement Murfreesboro",
     ],
   },
 ];

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 import { services } from "@/lib/services";
@@ -13,7 +14,13 @@ export function Footer() {
         <div className="grid md:grid-cols-12 gap-10">
           <div className="md:col-span-4">
             <div className="font-display text-2xl mb-4 flex items-center gap-2">
-              <span aria-hidden className="inline-block w-2 h-2 rounded-full bg-copper-light" />
+              <Image
+                src="/images/logo.png"
+                alt=""
+                width={36}
+                height={36}
+                className="h-9 w-9 bg-bone-50/95 rounded-sm p-1"
+              />
               <span>{siteConfig.shortName}</span>
             </div>
             <p className="text-bone-50/75 text-sm leading-relaxed mb-6 max-w-xs">
@@ -72,12 +79,12 @@ export function Footer() {
                 {siteConfig.business.email}
               </a>
               <div className="pt-3">
-                {addr.street}
+                {addr.city}, {addr.region}
                 <br />
-                {addr.city}, {addr.region} {addr.postalCode}
+                Serving Middle Tennessee
               </div>
               <div className="pt-3 text-xs text-bone-50/60">
-                Mon–Fri 8AM–4:30PM · Closed Sat & Sun · After-hours emergencies via main line
+                Mon–Fri 8AM–5PM · Closed Sat & Sun
               </div>
             </address>
           </div>
@@ -88,7 +95,7 @@ export function Footer() {
             © {year} {siteConfig.business.legalName}. All rights reserved.
           </p>
           <p className="font-display italic">
-            Family-owned in {addr.city} since {siteConfig.business.foundingYear}.
+            Locally owned in {addr.city}, Tennessee · {siteConfig.tagline}
           </p>
         </div>
       </div>
